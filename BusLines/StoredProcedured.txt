@@ -1,0 +1,215 @@
+-- Insert User
+CREATE PROCEDURE sp_InsertUser
+    @Username VARCHAR(50),
+    @Password VARCHAR(50),
+    @UserType VARCHAR(10)
+AS
+BEGIN
+    INSERT INTO Users (Username, Password, UserType)
+    VALUES (@Username, @Password, @UserType)
+END
+
+-- Update User
+CREATE PROCEDURE sp_UpdateUser
+    @UserID INT,
+    @Username VARCHAR(50),
+    @Password VARCHAR(50),
+    @UserType VARCHAR(10)
+AS
+BEGIN
+    UPDATE Users
+    SET Username = @Username,
+        Password = @Password,
+        UserType = @UserType
+    WHERE UserID = @UserID
+END
+
+-- Delete User
+CREATE PROCEDURE sp_DeleteUser
+    @UserID INT
+AS
+BEGIN
+    DELETE FROM Users
+    WHERE UserID = @UserID
+END
+
+
+
+
+
+
+
+
+
+-- Insert Company
+CREATE PROCEDURE sp_InsertCompany
+    @CompanyName VARCHAR(100),
+    @CompanyNumber VARCHAR(20),
+    @Seats INT,
+    @Status VARCHAR(20)
+AS
+BEGIN
+    INSERT INTO Companies (CompanyName, CompanyNumber, Seats, Status)
+    VALUES (@CompanyName, @CompanyNumber, @Seats, @Status)
+END
+
+-- Update Company
+CREATE PROCEDURE sp_UpdateCompany
+    @CompanyID INT,
+    @CompanyName VARCHAR(100),
+    @CompanyNumber VARCHAR(20),
+    @Seats INT,
+    @Status VARCHAR(20)
+AS
+BEGIN
+    UPDATE Companies
+    SET CompanyName = @CompanyName,
+        CompanyNumber = @CompanyNumber,
+        Seats = @Seats,
+        Status = @Status
+    WHERE CompanyID = @CompanyID
+END
+
+-- Delete Company
+CREATE PROCEDURE sp_DeleteCompany
+    @CompanyID INT
+AS
+BEGIN
+    DELETE FROM Companies
+    WHERE CompanyID = @CompanyID
+END
+
+
+
+
+
+-- Insert Line
+CREATE PROCEDURE sp_InsertLine
+    @CompanyID INT,
+    @DepartureCity VARCHAR(100),
+    @ArrivalCity VARCHAR(100),
+    @DepartureTime DATETIME,
+    @ArrivalTime DATETIME
+AS
+BEGIN
+    INSERT INTO Lines (CompanyID, DepartureCity, ArrivalCity, DepartureTime, ArrivalTime)
+    VALUES (@CompanyID, @DepartureCity, @ArrivalCity, @DepartureTime, @ArrivalTime)
+END
+
+-- Update Line
+CREATE PROCEDURE sp_UpdateLine
+    @LineID INT,
+    @CompanyID INT,
+    @DepartureCity VARCHAR(100),
+    @ArrivalCity VARCHAR(100),
+    @DepartureTime DATETIME,
+    @ArrivalTime DATETIME
+AS
+BEGIN
+    UPDATE Lines
+    SET CompanyID = @CompanyID,
+        DepartureCity = @DepartureCity,
+        ArrivalCity = @ArrivalCity,
+        DepartureTime = @DepartureTime,
+        ArrivalTime = @ArrivalTime
+    WHERE LineID = @LineID
+END
+
+-- Delete Line
+CREATE PROCEDURE sp_DeleteLine
+    @LineID INT
+AS
+BEGIN
+    DELETE FROM Lines
+    WHERE LineID = @LineID
+END
+
+
+
+
+
+
+
+
+-- Insert Booking
+CREATE PROCEDURE sp_InsertBooking
+    @UserID INT,
+    @LineID INT,
+    @BookingDate DATETIME,
+    @Status VARCHAR(20)
+AS
+BEGIN
+    INSERT INTO Bookings (UserID, LineID, BookingDate, Status)
+    VALUES (@UserID, @LineID, @BookingDate, @Status)
+END
+
+-- Update Booking
+CREATE PROCEDURE sp_UpdateBooking
+    @BookingID INT,
+    @UserID INT,
+    @LineID INT,
+    @BookingDate DATETIME,
+    @Status VARCHAR(20)
+AS
+BEGIN
+    UPDATE Bookings
+    SET UserID = @UserID,
+        LineID = @LineID,
+        BookingDate = @BookingDate,
+        Status = @Status
+    WHERE BookingID = @BookingID
+END
+
+-- Delete Booking
+CREATE PROCEDURE sp_DeleteBooking
+    @BookingID INT
+AS
+BEGIN
+    DELETE FROM Bookings
+    WHERE BookingID = @BookingID
+END
+
+
+
+
+
+
+
+
+-- Insert Feedback
+CREATE PROCEDURE sp_InsertFeedback
+    @UserID INT,
+    @CompanyID INT,
+    @FeedbackText TEXT,
+    @FeedbackDate DATETIME
+AS
+BEGIN
+    INSERT INTO Feedback (UserID, CompanyID, FeedbackText, FeedbackDate)
+    VALUES (@UserID, @CompanyID, @FeedbackText, @FeedbackDate)
+END
+
+-- Update Feedback
+CREATE PROCEDURE sp_UpdateFeedback
+    @FeedbackID INT,
+    @UserID INT,
+    @CompanyID INT,
+    @FeedbackText TEXT,
+    @FeedbackDate DATETIME
+AS
+BEGIN
+    UPDATE Feedback
+    SET UserID = @UserID,
+        CompanyID = @CompanyID,
+        FeedbackText = @FeedbackText,
+        FeedbackDate = @FeedbackDate
+    WHERE FeedbackID = @FeedbackID
+END
+
+-- Delete Feedback
+CREATE PROCEDURE sp_DeleteFeedback
+    @FeedbackID INT
+AS
+BEGIN
+    DELETE FROM Feedback
+    WHERE FeedbackID = @FeedbackID
+END 

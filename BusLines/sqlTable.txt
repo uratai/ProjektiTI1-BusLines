@@ -1,0 +1,51 @@
+-- Users table to store information about users (both admin and regular users)
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Password VARCHAR(50) NOT NULL,
+    UserType VARCHAR(10) NOT NULL -- 'Admin' or 'User'
+);
+
+-- Companies table to store information about bus companies
+CREATE TABLE Companies (
+    CompanyID INT PRIMARY KEY,
+    CompanyName VARCHAR(100) NOT NULL,
+   
+   
+);
+ALTER TABLE Companies
+ADD CompanyNumber VARCHAR(20),
+    Seats INT,
+    Status VARCHAR(20)
+-- Lines table to store information about bus lines
+CREATE TABLE Lines (
+    LineID INT PRIMARY KEY,
+    CompanyID INT,
+    DepartureCity VARCHAR(100) NOT NULL,
+    ArrivalCity VARCHAR(100) NOT NULL,
+    DepartureTime DATETIME NOT NULL,
+    ArrivalTime DATETIME NOT NULL,
+    FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID)
+);
+
+-- Bookings table to store user bookings
+CREATE TABLE Bookings (
+    BookingID INT PRIMARY KEY,
+    UserID INT,
+    LineID INT,
+    BookingDate DATETIME NOT NULL,
+    Status VARCHAR(20) NOT NULL, -- 'Booked', 'Cancelled', etc.
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (LineID) REFERENCES Lines(LineID)
+);
+
+-- Feedback table to store user feedback
+CREATE TABLE Feedback (
+    FeedbackID INT PRIMARY KEY,
+    UserID INT,
+    CompanyID INT,
+    FeedbackText TEXT,
+    FeedbackDate DATETIME,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (CompanyID) REFERENCES Companies(CompanyID)
+);

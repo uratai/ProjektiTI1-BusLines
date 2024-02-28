@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusLines", "BusLines\BusLines.csproj", "{7721B992-9D9F-40BE-8309-417471DFF6F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusLines", "BusLines\BusLines.csproj", "{7721B992-9D9F-40BE-8309-417471DFF6F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusLines.DAL", "BusLines.DAL\BusLines.DAL.csproj", "{C91D510F-46E1-498B-ABA4-6108E105994E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusLines.DAL", "BusLines.DAL\BusLines.DAL.csproj", "{C91D510F-46E1-498B-ABA4-6108E105994E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusLines.BO", "BusLines.BO\BusLines.BO.csproj", "{8C1C48B3-918E-4454-80ED-EB99DB44D61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusLines.BO", "BusLines.BO\BusLines.BO.csproj", "{8C1C48B3-918E-4454-80ED-EB99DB44D61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusLines.BLL", "BusLines.BLL\BusLines.BLL.csproj", "{C8768BE5-5199-4EAC-8061-4E35F40D0252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusLines.BLL", "BusLines.BLL\BusLines.BLL.csproj", "{C8768BE5-5199-4EAC-8061-4E35F40D0252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{D0AC6A92-F64A-4363-A066-9B4670B0F710}"
+	ProjectSection(SolutionItems) = preProject
+		sqlTable.txt = sqlTable.txt
+		StoredProcedured.txt = StoredProcedured.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
