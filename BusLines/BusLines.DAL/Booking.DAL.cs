@@ -129,7 +129,7 @@ namespace BusLines.DAL
         }
 
 
-        public static void DeleteCompany(int bookingID)
+        public static void DeleteBooking(int bookingID)
         {
             SqlConnection Con = new SqlConnection(DBHelper.GetConnectionString());
 

@@ -46,4 +46,3 @@ namespace ProjektiTi1_Busat.BO
 			}
 		}
 	}
-}
