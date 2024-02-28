@@ -12,7 +12,7 @@ namespace MenagjimiAutobusav.DAL
 
 		public static string GetConnectionString()
 		{
-			var path = @"C:\Users\SwissTech\OneDrive\Desktop\BUSLINES\BusLines\BusLines.DAL\AppSettings.json";
+			var path = @"C:\Users\HP\Desktop\Semestri-IV\SadikuIdriziHyseni\BusLines\BusLines.DAL\AppSettings.json";
 
 			try
 			{

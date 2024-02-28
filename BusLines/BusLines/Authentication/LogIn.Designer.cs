@@ -1,142 +1,205 @@
 ﻿namespace BusLines.Authentication
 {
-	partial class LogIn
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class LogIn
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			cbRole = new ComboBox();
-			btnLogin = new Button();
-			btnRegisterUser = new Button();
-			txtPassword = new TextBox();
-			txtUserName = new TextBox();
-			lblPassword = new Label();
-			lblUsername = new Label();
-			SuspendLayout();
-			// 
-			// cbRole
-			// 
-			cbRole.FormattingEnabled = true;
-			cbRole.Items.AddRange(new object[] { "User", "Admin" });
-			cbRole.Location = new Point(313, 71);
-			cbRole.Margin = new Padding(2);
-			cbRole.Name = "cbRole";
-			cbRole.Size = new Size(146, 28);
-			cbRole.TabIndex = 13;
-			// 
-			// btnLogin
-			// 
-			btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			btnLogin.Location = new Point(408, 311);
-			btnLogin.Margin = new Padding(2);
-			btnLogin.Name = "btnLogin";
-			btnLogin.Size = new Size(90, 68);
-			btnLogin.TabIndex = 12;
-			btnLogin.Text = "Login";
-			btnLogin.UseVisualStyleBackColor = true;
-			btnLogin.Click += btnLogin_Click_1;
-			// 
-			// btnRegisterUser
-			// 
-			btnRegisterUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			btnRegisterUser.Location = new Point(303, 311);
-			btnRegisterUser.Margin = new Padding(2);
-			btnRegisterUser.Name = "btnRegisterUser";
-			btnRegisterUser.Size = new Size(90, 68);
-			btnRegisterUser.TabIndex = 11;
-			btnRegisterUser.Text = "Register User";
-			btnRegisterUser.UseVisualStyleBackColor = true;
-			// 
-			// txtPassword
-			// 
-			txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			txtPassword.Location = new Point(303, 253);
-			txtPassword.Margin = new Padding(2);
-			txtPassword.Name = "txtPassword";
-			txtPassword.Size = new Size(188, 34);
-			txtPassword.TabIndex = 10;
-			// 
-			// txtUserName
-			// 
-			txtUserName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			txtUserName.Location = new Point(303, 170);
-			txtUserName.Margin = new Padding(2);
-			txtUserName.Name = "txtUserName";
-			txtUserName.Size = new Size(188, 34);
-			txtUserName.TabIndex = 9;
-			// 
-			// lblPassword
-			// 
-			lblPassword.AutoSize = true;
-			lblPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			lblPassword.Location = new Point(303, 217);
-			lblPassword.Margin = new Padding(2, 0, 2, 0);
-			lblPassword.Name = "lblPassword";
-			lblPassword.Size = new Size(93, 28);
-			lblPassword.TabIndex = 8;
-			lblPassword.Text = "Password";
-			// 
-			// lblUsername
-			// 
-			lblUsername.AutoSize = true;
-			lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			lblUsername.Location = new Point(303, 138);
-			lblUsername.Margin = new Padding(2, 0, 2, 0);
-			lblUsername.Name = "lblUsername";
-			lblUsername.Size = new Size(103, 28);
-			lblUsername.TabIndex = 7;
-			lblUsername.Text = "Username:";
-			// 
-			// LogIn
-			// 
-			AutoScaleDimensions = new SizeF(8F, 20F);
-			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(800, 450);
-			Controls.Add(cbRole);
-			Controls.Add(btnLogin);
-			Controls.Add(btnRegisterUser);
-			Controls.Add(txtPassword);
-			Controls.Add(txtUserName);
-			Controls.Add(lblPassword);
-			Controls.Add(lblUsername);
-			Name = "LogIn";
-			Text = "LogIn";
-			Load += LogIn_Load;
-			ResumeLayout(false);
-			PerformLayout();
-		}
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
+            label1 = new Label();
+            cbRole = new ComboBox();
+            btnLogin = new Button();
+            txtPassword = new TextBox();
+            txtUserName = new TextBox();
+            lblPassword = new Label();
+            lblUsername = new Label();
+            pictureBox6 = new PictureBox();
+            label5 = new Label();
+            label4 = new Label();
+            lblRegister = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(110, 224);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 29);
+            label1.TabIndex = 34;
+            label1.Text = "Role:";
+            // 
+            // cbRole
+            // 
+            cbRole.FormattingEnabled = true;
+            cbRole.Items.AddRange(new object[] { "User", "Admin" });
+            cbRole.Location = new Point(110, 265);
+            cbRole.Margin = new Padding(2);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new Size(268, 33);
+            cbRole.TabIndex = 33;
+            // 
+            // btnLogin
+            // 
+            btnLogin.BackColor = Color.Teal;
+            btnLogin.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(178, 524);
+            btnLogin.Margin = new Padding(2);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(143, 66);
+            btnLogin.TabIndex = 32;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Location = new Point(110, 436);
+            txtPassword.Margin = new Padding(2);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(268, 37);
+            txtPassword.TabIndex = 30;
+            // 
+            // txtUserName
+            // 
+            txtUserName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUserName.Location = new Point(110, 355);
+            txtUserName.Margin = new Padding(2);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(268, 37);
+            txtUserName.TabIndex = 29;
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPassword.Location = new Point(110, 405);
+            lblPassword.Margin = new Padding(2, 0, 2, 0);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(126, 29);
+            lblPassword.TabIndex = 28;
+            lblPassword.Text = "Password";
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsername.Location = new Point(110, 310);
+            lblUsername.Margin = new Padding(2, 0, 2, 0);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(145, 29);
+            lblUsername.TabIndex = 27;
+            lblUsername.Text = "Username:";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(155, 57);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(196, 143);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 26;
+            pictureBox6.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Verdana", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Crimson;
+            label5.Location = new Point(775, 637);
+            label5.Name = "label5";
+            label5.Size = new Size(72, 26);
+            label5.TabIndex = 25;
+            label5.Text = "Reset";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Verdana", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Crimson;
+            label4.Location = new Point(464, -2);
+            label4.Name = "label4";
+            label4.Size = new Size(39, 38);
+            label4.TabIndex = 24;
+            label4.Text = "X";
+            // 
+            // lblRegister
+            // 
+            lblRegister.AutoSize = true;
+            lblRegister.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRegister.Location = new Point(187, 607);
+            lblRegister.Margin = new Padding(2, 0, 2, 0);
+            lblRegister.Name = "lblRegister";
+            lblRegister.Size = new Size(134, 29);
+            lblRegister.TabIndex = 35;
+            lblRegister.Text = "Register...";
+            lblRegister.Click += lblRegister_Click;
+            // 
+            // LogIn
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
+            ClientSize = new Size(501, 662);
+            Controls.Add(lblRegister);
+            Controls.Add(label1);
+            Controls.Add(cbRole);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
+            Controls.Add(pictureBox6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
+            Name = "LogIn";
+            Text = "LogIn";
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		#endregion
+        #endregion
 
-		private ComboBox cbRole;
-		private Button btnLogin;
-		private Button btnRegisterUser;
-		private TextBox txtPassword;
-		private TextBox txtUserName;
-		private Label lblPassword;
-		private Label lblUsername;
-	}
+        private Label label1;
+        private ComboBox cbRole;
+        private Button btnLogin;
+        private TextBox txtPassword;
+        private TextBox txtUserName;
+        private Label lblPassword;
+        private Label lblUsername;
+        private PictureBox pictureBox6;
+        private Label label5;
+        private Label label4;
+        private Label lblRegister;
+    }
 }
