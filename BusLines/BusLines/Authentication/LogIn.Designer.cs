@@ -47,8 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(110, 224);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(93, 245);
             label1.Name = "label1";
             label1.Size = new Size(75, 29);
             label1.TabIndex = 34;
@@ -58,10 +57,10 @@
             // 
             cbRole.FormattingEnabled = true;
             cbRole.Items.AddRange(new object[] { "User", "Admin" });
-            cbRole.Location = new Point(110, 265);
-            cbRole.Margin = new Padding(2);
+            cbRole.Location = new Point(93, 292);
+            cbRole.Margin = new Padding(3, 2, 3, 2);
             cbRole.Name = "cbRole";
-            cbRole.Size = new Size(268, 33);
+            cbRole.Size = new Size(366, 37);
             cbRole.TabIndex = 33;
             // 
             // btnLogin
@@ -69,10 +68,10 @@
             btnLogin.BackColor = Color.Teal;
             btnLogin.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(178, 524);
-            btnLogin.Margin = new Padding(2);
+            btnLogin.Location = new Point(170, 560);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(143, 66);
+            btnLogin.Size = new Size(214, 77);
             btnLogin.TabIndex = 32;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
@@ -81,27 +80,26 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(110, 436);
-            txtPassword.Margin = new Padding(2);
+            txtPassword.Location = new Point(93, 491);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(268, 37);
+            txtPassword.Size = new Size(366, 37);
             txtPassword.TabIndex = 30;
             // 
             // txtUserName
             // 
             txtUserName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUserName.Location = new Point(110, 355);
-            txtUserName.Margin = new Padding(2);
+            txtUserName.Location = new Point(93, 397);
+            txtUserName.Margin = new Padding(3, 2, 3, 2);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(268, 37);
+            txtUserName.Size = new Size(366, 37);
             txtUserName.TabIndex = 29;
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPassword.Location = new Point(110, 405);
-            lblPassword.Margin = new Padding(2, 0, 2, 0);
+            lblPassword.Location = new Point(93, 455);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(126, 29);
             lblPassword.TabIndex = 28;
@@ -111,8 +109,7 @@
             // 
             lblUsername.AutoSize = true;
             lblUsername.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsername.Location = new Point(110, 310);
-            lblUsername.Margin = new Padding(2, 0, 2, 0);
+            lblUsername.Location = new Point(93, 345);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(145, 29);
             lblUsername.TabIndex = 27;
@@ -121,9 +118,10 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(155, 57);
+            pictureBox6.Location = new Point(170, 54);
+            pictureBox6.Margin = new Padding(4, 3, 4, 3);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(196, 143);
+            pictureBox6.Size = new Size(232, 166);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 26;
             pictureBox6.TabStop = false;
@@ -133,7 +131,8 @@
             label5.AutoSize = true;
             label5.Font = new Font("Verdana", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Crimson;
-            label5.Location = new Point(775, 637);
+            label5.Location = new Point(1162, 739);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(72, 26);
             label5.TabIndex = 25;
@@ -142,11 +141,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Crimson;
-            label4.Location = new Point(464, -2);
+            label4.Location = new Point(516, -1);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(39, 38);
+            label4.Size = new Size(44, 44);
             label4.TabIndex = 24;
             label4.Text = "X";
             // 
@@ -154,8 +154,7 @@
             // 
             lblRegister.AutoSize = true;
             lblRegister.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRegister.Location = new Point(187, 607);
-            lblRegister.Margin = new Padding(2, 0, 2, 0);
+            lblRegister.Location = new Point(218, 651);
             lblRegister.Name = "lblRegister";
             lblRegister.Size = new Size(134, 29);
             lblRegister.TabIndex = 35;
@@ -164,10 +163,10 @@
             // 
             // LogIn
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(15F, 29F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(501, 662);
+            ClientSize = new Size(560, 716);
             Controls.Add(lblRegister);
             Controls.Add(label1);
             Controls.Add(cbRole);
@@ -179,9 +178,11 @@
             Controls.Add(pictureBox6);
             Controls.Add(label5);
             Controls.Add(label4);
+            Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
+            Margin = new Padding(6, 5, 6, 5);
             Name = "LogIn";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
