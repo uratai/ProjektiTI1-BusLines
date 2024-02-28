@@ -46,7 +46,7 @@ namespace BusLines.DAL
             }
         }
 
-        public static void CreateCompany(int companyID, string companyName, string companyNumber,int seats, string status)
+        public static void InsertCompany(int companyID, string companyName, string companyNumber,int seats, string status)
         {
             // Create a new instance of the SqlConnection class to connect to the database
             //SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Menaxhimi_porosive;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -58,7 +58,7 @@ namespace BusLines.DAL
                 Con.Open();
 
                 // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("CreateCompany", Con);
+                SqlCommand cmd = new SqlCommand("InsertCompany", Con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Add value to params of procedure
