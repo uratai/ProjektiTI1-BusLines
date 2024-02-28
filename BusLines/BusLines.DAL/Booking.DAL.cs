@@ -25,9 +25,9 @@ namespace BusLines.DAL
 
                 // Add parameters for the stored procedure
                 cmd.Parameters.Add("@BookingId", System.Data.SqlDbType.Int).Value = bookingID;
-                cmd.Parameters.Add("@UserId", System.Data.SqlDbType.NVarChar, 100).Value = userID;
-                cmd.Parameters.Add("@LineId", System.Data.SqlDbType.Date).Value = lineID;
-                cmd.Parameters.Add("@BookingDate", System.Data.SqlDbType.NVarChar, 100).Value = bookingDate;
+                cmd.Parameters.Add("@UserId", System.Data.SqlDbType.Int).Value = userID;
+                cmd.Parameters.Add("@LineId", System.Data.SqlDbType.Int).Value = lineID;
+                cmd.Parameters.Add("@BookingDate", System.Data.SqlDbType.Date).Value = bookingDate;
                 cmd.Parameters.Add("@Status", System.Data.SqlDbType.NVarChar, 100).Value = status;
                 
 
