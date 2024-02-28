@@ -117,5 +117,65 @@ namespace BusLines.DAL
 				}
 			}
 		}
+		public static DataTable SearchLinesbyDestination(string departureCity, string arrivalCity)
+		{
+			string connectionString = DBHelper.GetConnectionString();
+			DataTable linesTable = new DataTable();
+
+			using (SqlConnection con = new SqlConnection(connectionString))
+			{
+				try
+				{
+					con.Open();
+
+					SqlCommand cmd = new SqlCommand("SearchLinesbyCities", con);
+					cmd.CommandType = CommandType.StoredProcedure;
+
+					// Add parameters for departure city and arrival city
+					cmd.Parameters.AddWithValue("@DepartureCity", departureCity);
+					cmd.Parameters.AddWithValue("@ArrivalCity", arrivalCity);
+
+					SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+					adapter.Fill(linesTable);
+				}
+				catch (Exception ex)
+				{
+					throw ex;
+				}
+			}
+
+			return linesTable;
+		}
+		public static DataTable ReadLinesWithCompanyName()
+		{
+			string connectionString = DBHelper.GetConnectionString();
+			DataTable linesTable = new DataTable();
+
+			using (SqlConnection con = new SqlConnection(connectionString))
+			{
+				try
+				{
+					con.Open();
+
+					// Assuming there's a query to join the Lines table with the Company table to get the company name
+					string query = "SELECT L.LineID, L.DepartureCity, L.ArrivalCity, L.DepartureTime, L.ArrivalTime, " +
+						   "C.CompanyName " +
+						   "FROM Lines L " +
+						   "INNER JOIN Companies C ON L.CompanyID = C.CompanyID";
+
+
+					SqlCommand cmd = new SqlCommand(query, con);
+					SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+					adapter.Fill(linesTable);
+				}
+				catch (Exception ex)
+				{
+					throw ex;
+				}
+			}
+
+			return linesTable;
+		}
 	}
+
 }

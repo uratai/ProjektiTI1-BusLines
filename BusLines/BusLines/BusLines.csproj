@@ -16,10 +16,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="6.0.8" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Feedback\" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

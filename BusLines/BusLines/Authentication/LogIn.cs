@@ -1,4 +1,5 @@
 ﻿using BusLines.Bookings;
+using BusLines.Feedback;
 using MenagjimiAutobusav.DAL;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace BusLines.Authentication
 		public LogIn()
 		{
 			InitializeComponent();
+			//_resourceManager = new ResourceManager("BusLines.SharedResources", typeof(LogIn).Assembly);
 			txtPassword.UseSystemPasswordChar = true;
 		}
 
@@ -44,12 +46,12 @@ namespace BusLines.Authentication
 			string enteredPassword = txtPassword.Text;
 			string selectedRole = cbRole.SelectedItem?.ToString(); // Assuming you have a ComboBox control named cbRole for role selection
 
-			// Create a SQL query to check if the user with the provided credentials exists
-			string query = "SELECT COUNT(*) FROM [Users] WHERE Username = @Username AND Password = @Password AND Role = @Role";
+			// Create a SQL query to retrieve the user ID of the logged-in user
+			string userIdQuery = "SELECT UserID FROM [Users] WHERE Username = @Username AND Password = @Password AND Role = @Role";
 
 			using (SqlConnection con = new SqlConnection(DBHelper.GetConnectionString()))
 			{
-				using (SqlCommand command = new SqlCommand(query, con))
+				using (SqlCommand command = new SqlCommand(userIdQuery, con))
 				{
 					command.Parameters.AddWithValue("@Username", enteredUsername);
 					command.Parameters.AddWithValue("@Password", enteredPassword);
@@ -58,23 +60,27 @@ namespace BusLines.Authentication
 					try
 					{
 						con.Open();
-						int count = (int)command.ExecuteScalar();
+						object userIdObj = command.ExecuteScalar();
 
-						if (count > 0)
+						if (userIdObj != null)
 						{
+							int userId = (int)userIdObj;
+
 							MessageBox.Show("Login successful!");
 
 							// Open the appropriate form based on the selected role
 							if (selectedRole.Equals("User", StringComparison.OrdinalIgnoreCase))
 							{
-								// Open UserForm
-								BookingForm userForm = new BookingForm();
+								// Open UserForm and pass user ID
+								BookingForm userForm = new BookingForm(userId);
+								FeedbackUserForm feedbackform = new FeedbackUserForm(userId);
+								//feedbackform.Show();
 								userForm.Show();
 							}
 							else if (selectedRole.Equals("Admin", StringComparison.OrdinalIgnoreCase))
 							{
-								// Open AdminForm
-								BookingForm adminForm = new BookingForm();
+								// Open AdminForm and pass user ID
+								AdminBookForm adminForm = new AdminBookForm();
 								adminForm.Show();
 							}
 						}

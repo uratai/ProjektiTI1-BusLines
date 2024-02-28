@@ -19,6 +19,7 @@ namespace BusLines.Company
 		public AdminCompanyForm()
 		{
 			InitializeComponent();
+			UpdateDataGridView();
 		}
 		public void UpdateDataGridView()
 		{

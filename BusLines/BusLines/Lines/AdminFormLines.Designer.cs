@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			
 			label4 = new Label();
 			label3 = new Label();
 			txtDepartureCity = new TextBox();
@@ -38,15 +37,13 @@
 			dtDeprartureTime = new DateTimePicker();
 			dtArrivalTime = new DateTimePicker();
 			label5 = new Label();
-			txtCompanyId = new TextBox();
 			btnAdd = new Button();
 			btnDelete = new Button();
 			btnUpdate = new Button();
-			
+			dataAddLines = new DataGridView();
+			cmbCompanyID = new ComboBox();
+			((System.ComponentModel.ISupportInitialize)dataAddLines).BeginInit();
 			SuspendLayout();
-			// 
-			// dataAddLines
-			
 			// 
 			// label4
 			// 
@@ -128,14 +125,6 @@
 			label5.TabIndex = 35;
 			label5.Text = "Company ID:";
 			// 
-			// txtCompanyId
-			// 
-			txtCompanyId.Location = new Point(167, 113);
-			txtCompanyId.Margin = new Padding(2);
-			txtCompanyId.Name = "txtCompanyId";
-			txtCompanyId.Size = new Size(121, 27);
-			txtCompanyId.TabIndex = 34;
-			// 
 			// btnAdd
 			// 
 			btnAdd.Location = new Point(167, 365);
@@ -144,6 +133,7 @@
 			btnAdd.TabIndex = 36;
 			btnAdd.Text = "Add";
 			btnAdd.UseVisualStyleBackColor = true;
+			btnAdd.Click += btnAdd_Click;
 			// 
 			// btnDelete
 			// 
@@ -153,6 +143,7 @@
 			btnDelete.TabIndex = 37;
 			btnDelete.Text = "Delete";
 			btnDelete.UseVisualStyleBackColor = true;
+			btnDelete.Click += btnDelete_Click;
 			// 
 			// btnUpdate
 			// 
@@ -162,20 +153,41 @@
 			btnUpdate.TabIndex = 38;
 			btnUpdate.Text = "Update";
 			btnUpdate.UseVisualStyleBackColor = true;
+			btnUpdate.Click += btnUpdate_Click;
+			// 
+			// dataAddLines
+			// 
+			dataAddLines.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataAddLines.Location = new Point(395, 36);
+			dataAddLines.Margin = new Padding(2);
+			dataAddLines.Name = "dataAddLines";
+			dataAddLines.RowHeadersWidth = 62;
+			dataAddLines.RowTemplate.Height = 33;
+			dataAddLines.Size = new Size(370, 201);
+			dataAddLines.TabIndex = 39;
+			dataAddLines.CellContentClick += dataAddLines_CellContentClick;
+			// 
+			// cmbCompanyID
+			// 
+			cmbCompanyID.FormattingEnabled = true;
+			cmbCompanyID.Location = new Point(167, 116);
+			cmbCompanyID.Name = "cmbCompanyID";
+			cmbCompanyID.Size = new Size(151, 28);
+			cmbCompanyID.TabIndex = 40;
 			// 
 			// AdminFormLines
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
+			Controls.Add(cmbCompanyID);
+			Controls.Add(dataAddLines);
 			Controls.Add(btnUpdate);
 			Controls.Add(btnDelete);
 			Controls.Add(btnAdd);
 			Controls.Add(label5);
-			Controls.Add(txtCompanyId);
 			Controls.Add(dtArrivalTime);
 			Controls.Add(dtDeprartureTime);
-			
 			Controls.Add(label4);
 			Controls.Add(label3);
 			Controls.Add(txtDepartureCity);
@@ -184,14 +196,14 @@
 			Controls.Add(ttArrivalCity);
 			Name = "AdminFormLines";
 			Text = "AdminFormLines";
-		
+			Load += AdminFormLines_Load;
+			((System.ComponentModel.ISupportInitialize)dataAddLines).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private DataGridView dataAddBus;
 		private ComboBox cbStatus;
 		private Label label4;
 		private Label label3;
@@ -202,9 +214,10 @@
 		private DateTimePicker dtDeprartureTime;
 		private DateTimePicker dtArrivalTime;
 		private Label label5;
-		private TextBox txtCompanyId;
 		private Button btnAdd;
 		private Button btnDelete;
 		private Button btnUpdate;
+		private DataGridView dataAddLines;
+		private ComboBox cmbCompanyID;
 	}
 }

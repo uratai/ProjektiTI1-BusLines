@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusLines.DAL
 {
-    public class Feedback
-    {
-		public static void InsertFeedback(int feedbackID , int userID, int companyID, string feedbackText, DateTime feedbackDate)
+	public class FeedbackDAL
+	{
+		public static void InsertFeedback(int userID, int companyID, string feedbackText, DateTime feedbackDate)
 		{
 			string connectionString = DBHelper.GetConnectionString();
 
@@ -24,7 +24,7 @@ namespace BusLines.DAL
 					SqlCommand cmd = new SqlCommand("InsertFeedback", con);
 					cmd.CommandType = CommandType.StoredProcedure;
 
-					cmd.Parameters.AddWithValue("@FeedbackID", feedbackID);
+					//cmd.Parameters.AddWithValue("@FeedbackID", feedbackID);
 					cmd.Parameters.AddWithValue("@UserID", userID);
 					cmd.Parameters.AddWithValue("@CompanyID", companyID);
 					cmd.Parameters.AddWithValue("@FeedbackText", feedbackText);
@@ -51,7 +51,7 @@ namespace BusLines.DAL
 					SqlCommand cmd = new SqlCommand("UpdateFeedback", con);
 					cmd.CommandType = CommandType.StoredProcedure;
 
-					cmd.Parameters.AddWithValue("@FeedbackID",feedbackID);
+					cmd.Parameters.AddWithValue("@FeedbackID", feedbackID);
 					cmd.Parameters.AddWithValue("@UserID", userID);
 					cmd.Parameters.AddWithValue("@CompanyID", companyID);
 					cmd.Parameters.AddWithValue("@FeedbackText", feedbackText);
@@ -101,8 +101,8 @@ namespace BusLines.DAL
 				{
 					con.Open();
 
-					SqlCommand cmd = new SqlCommand("ReadFeedback", con);
-					cmd.CommandType = CommandType.StoredProcedure;
+					SqlCommand cmd = new SqlCommand("SELECT f.FeedbackID, u.Username AS UserName, c.CompanyName, f.FeedbackText, f.FeedbackDate FROM Feedback f INNER JOIN Users u ON f.UserID = u.UserID INNER JOIN Companies c ON f.CompanyID = c.CompanyID", con);
+					cmd.CommandType = CommandType.Text;
 
 					SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 					adapter.Fill(feedbackTable);

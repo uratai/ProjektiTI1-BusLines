@@ -9,51 +9,42 @@ using System.Threading.Tasks;
 
 namespace BusLines.DAL
 {
-    public class Booking
+    public class BookingDAL
     {
         public static DataTable ReadBooking()
 
         {
-            //created new instance for connection with sql via connection string
-            SqlConnection Con = new SqlConnection(DBHelper.GetConnectionString());
+			//created new instance for connection with sql via connection string
+			SqlConnection con = new SqlConnection(DBHelper.GetConnectionString());
+			{
+				try
+				{
+					con.Open();
 
-            try
-            {
-                Con.Open();
+					// Modify the SQL query to include line details by joining the Lines table
+					SqlCommand cmd = new SqlCommand(@"SELECT b.BookingID, u.Username AS UserName, l.DepartureCity, l.ArrivalCity, l.DepartureTime, l.ArrivalTime, b.BookingDate, b.Status 
+                                               FROM Bookings b 
+                                               JOIN Users u ON b.UserID = u.UserID
+                                               JOIN Lines l ON b.LineID = l.LineID", con);
+					cmd.CommandType = CommandType.Text;
 
-                // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("Readbooking", Con);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+					// Create a SqlDataAdapter to fill a DataTable with the query results
+					SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+					DataTable dtBooking = new DataTable();
+					dataAdapter.Fill(dtBooking);
 
-                // Create a new instance of the SqlDataAdapter class and execute the stored procedure using the SqlCommand object
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-
-                // Create a new instance of the DataTable class and fill it with the data returned by the SqlDataAdapter
-                DataTable dtCompany = new DataTable();
-                dataAdapter.Fill(dtCompany);
-
-                // Return the filled DataTable object
-                return dtCompany;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                Con.Close();
-            }
-        }
+					return dtBooking;
+				}
+				catch (Exception ex)
+				{
+					throw ex;
+				}
+			}
+		}
 
 
 
-
-
-
-
-
-
-        public static void InsertBooking(int bookingID, int userID, int lineID, DateTime bookingDate, string status)
+		public static void InsertBooking( int userID, int lineID, DateTime bookingDate, string status)
         {
             SqlConnection con = new SqlConnection(DBHelper.GetConnectionString());
 
@@ -67,7 +58,7 @@ namespace BusLines.DAL
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Add parameters for the stored procedure
-                cmd.Parameters.Add("@BookingId", System.Data.SqlDbType.Int).Value = bookingID;
+                //cmd.Parameters.Add("@BookingId", System.Data.SqlDbType.Int).Value = bookingID;
                 cmd.Parameters.Add("@UserId", System.Data.SqlDbType.Int).Value = userID;
                 cmd.Parameters.Add("@LineId", System.Data.SqlDbType.Int).Value = lineID;
                 cmd.Parameters.Add("@BookingDate", System.Data.SqlDbType.Date).Value = bookingDate;
@@ -139,11 +130,11 @@ namespace BusLines.DAL
                 Con.Open();
 
                 // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("DeleteCompany", Con);
+                SqlCommand cmd = new SqlCommand("DeleteBooking", Con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Assign the parameter for the stored procedure
-                cmd.Parameters.Add("@Id", SqlDbType.Int).Value = bookingID;
+                cmd.Parameters.Add("@BookingID", SqlDbType.Int).Value = bookingID;
 
                 // Execute the stored procedure
                 cmd.ExecuteNonQuery();
