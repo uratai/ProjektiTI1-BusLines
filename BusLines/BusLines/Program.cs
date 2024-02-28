@@ -1,4 +1,5 @@
 using BusLines.Authentication;
+using BusLines.Company;
 
 namespace BusLines
 {
@@ -13,7 +14,7 @@ namespace BusLines
 			// To customize application configuration such as set high DPI settings or default font,
 			// see https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
-			Application.Run(new LogIn());
+			Application.Run(new AdminCompanyForm());
 		}
 	}
 }

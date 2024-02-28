@@ -19,9 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Lines\" />
     <Folder Include="Feedback\" />
-    <Folder Include="Company\" />
   </ItemGroup>
 
   <ItemGroup>

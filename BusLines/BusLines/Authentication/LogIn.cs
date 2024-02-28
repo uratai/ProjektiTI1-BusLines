@@ -18,6 +18,7 @@ namespace BusLines.Authentication
 		public LogIn()
 		{
 			InitializeComponent();
+			txtPassword.UseSystemPasswordChar = true;
 		}
 
 

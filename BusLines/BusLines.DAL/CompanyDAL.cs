@@ -6,10 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.Design;
 
 namespace BusLines.DAL
 {
-    internal class Companies
+    public class CompanyDAL
     {
 
         public static DataTable ReadCompany()
@@ -23,7 +24,7 @@ namespace BusLines.DAL
                 Con.Open();
 
                 // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("ReadCompany", Con);
+                SqlCommand cmd = new SqlCommand("ReadCompanies", Con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Create a new instance of the SqlDataAdapter class and execute the stored procedure using the SqlCommand object
@@ -46,42 +47,7 @@ namespace BusLines.DAL
             }
         }
 
-        public static void InsertCompany(int companyID, string companyName, string companyNumber,int seats, string status)
-        {
-            // Create a new instance of the SqlConnection class to connect to the database
-            //SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Menaxhimi_porosive;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            SqlConnection Con = new SqlConnection(DBHelper.GetConnectionString());
-
-            try
-            {
-                // Open the connection to the database
-                Con.Open();
-
-                // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("InsertCompany", Con);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-                // Add value to params of procedure
-                cmd.Parameters.Add("@CompanyId", System.Data.SqlDbType.Int, 100).Value = companyID;
-                cmd.Parameters.Add("@CompanyName", System.Data.SqlDbType.NVarChar, 100).Value = companyName;
-                cmd.Parameters.Add("@CompanyNumber", System.Data.SqlDbType.NVarChar, 100).Value = companyNumber;
-                cmd.Parameters.Add("@Seats", System.Data.SqlDbType.Int).Value = seats;
-                cmd.Parameters.Add("Status", System.Data.SqlDbType.NVarChar, 100).Value= status;
-
-
-                // Execute the stored procedure
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                // Close the connection to the database
-                Con.Close();
-            }
-        }
+       
 
         public static void UpdateCompany(int companyID, string companyName, string companyNumber, int seats, string status)
         {
@@ -123,7 +89,7 @@ namespace BusLines.DAL
 
         }
 
-        public static void DeleteCompany(int companyId)
+        public static void DeleteCompany(int companyID)
         {
             SqlConnection Con = new SqlConnection(DBHelper.GetConnectionString());
 
@@ -137,7 +103,7 @@ namespace BusLines.DAL
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Assign the parameter for the stored procedure
-                cmd.Parameters.Add("@Id", SqlDbType.Int).Value = companyId;
+                cmd.Parameters.Add("@CompanyID", SqlDbType.Int).Value = companyID;
 
                 // Execute the stored procedure
                 cmd.ExecuteNonQuery();
@@ -198,6 +164,45 @@ namespace BusLines.DAL
                 con.Close();
             }
         }
-    }
-}
+
+		public static void InsertCompany(string companyName, string companyNumber, int seats, string status)
+		{
+
+			// Create a new instance of the SqlConnection class to connect to the database
+			//SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Menaxhimi_porosive;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+			SqlConnection Con = new SqlConnection(DBHelper.GetConnectionString());
+
+			try
+			{
+				// Open the connection to the database
+				Con.Open();
+
+				// Create a new instance of the SqlCommand class to execute the stored procedure
+				SqlCommand cmd = new SqlCommand("InsertCompany", Con);
+				cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+				// Add value to params of procedure
+			
+				cmd.Parameters.Add("@CompanyName", System.Data.SqlDbType.NVarChar, 100).Value = companyName;
+				cmd.Parameters.Add("@CompanyNumber", System.Data.SqlDbType.NVarChar, 100).Value = companyNumber;
+				cmd.Parameters.Add("@Seats", System.Data.SqlDbType.Int).Value = seats;
+				cmd.Parameters.Add("Status", System.Data.SqlDbType.NVarChar, 100).Value = status;
+
+
+				// Execute the stored procedure
+				cmd.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			finally
+			{
+				// Close the connection to the database
+				Con.Close();
+			}
+		}
+	}
+	}
+
 
