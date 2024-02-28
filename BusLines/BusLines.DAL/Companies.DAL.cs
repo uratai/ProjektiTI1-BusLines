@@ -153,7 +153,10 @@ namespace BusLines.DAL
                 Con.Close();
             }
         }
-        public static DataTable SearchCompanyByName(string companyName)
+
+
+
+        public static DataTable SearchCompanyByName(string companyName )
         {
             SqlConnection con = new SqlConnection(DBHelper.GetConnectionString());
 
