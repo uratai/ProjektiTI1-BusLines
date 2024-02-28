@@ -53,7 +53,7 @@ namespace BusLines.DAL
 
 
 
-        public static void CreateBooking(int bookingID, int userID, int lineID, DateTime bookingDate, string status)
+        public static void InsertBooking(int bookingID, int userID, int lineID, DateTime bookingDate, string status)
         {
             SqlConnection con = new SqlConnection(DBHelper.GetConnectionString());
 
@@ -63,7 +63,7 @@ namespace BusLines.DAL
                 con.Open();
 
                 // Create a new instance of the SqlCommand class to execute the stored procedure
-                SqlCommand cmd = new SqlCommand("CreateBooking", con);
+                SqlCommand cmd = new SqlCommand("InsertBooking", con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Add parameters for the stored procedure
