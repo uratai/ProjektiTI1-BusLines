@@ -456,7 +456,7 @@
             dataAddLines.BackgroundColor = Color.Lavender;
             dataAddLines.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataAddLines.GridColor = SystemColors.ButtonHighlight;
-            dataAddLines.Location = new Point(835, 262);
+            dataAddLines.Location = new Point(863, 262);
             dataAddLines.Margin = new Padding(2);
             dataAddLines.Name = "dataAddLines";
             dataAddLines.RowHeadersWidth = 62;

@@ -1,4 +1,5 @@
 ﻿using BusLines.DAL;
+using BusLines.Feedback;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace BusLines.Bookings
                 // Bind the DataGridView to the linesData
                 //dataBookUsers.DataSource = userbook;
                 BookingDAL.InsertBooking(UserId, LineId, dateTimeBooking.Value, cbStatus.Text);
-
+                MessageBox.Show("Booking added successfully!");
                 adminBookForm.UpdateDataGridView();
 
 
@@ -55,7 +56,15 @@ namespace BusLines.Bookings
 
         }
 
+        private void lblFeedback_Click(object sender, EventArgs e)
+        {
+            FeedbackUserForm feedbackUserForm = new FeedbackUserForm(UserId);
+            feedbackUserForm.Show();
+            this.Hide();
 
+        }
+
+       
     }
 
 }

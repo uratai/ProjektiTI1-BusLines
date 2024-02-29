@@ -1,4 +1,5 @@
-﻿using BusLines.Bookings;
+﻿using BusLines.Authentication;
+using BusLines.Bookings;
 using BusLines.Company;
 using BusLines.DAL;
 using System;
@@ -88,7 +89,19 @@ namespace BusLines.Feedback
             }
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+            BookingForm booking = new BookingForm(UserId);
+            booking.Show();
+            this.Hide();
+        }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            this.Hide();
+        }
     }
 }
 

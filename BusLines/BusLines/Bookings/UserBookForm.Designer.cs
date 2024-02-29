@@ -63,7 +63,7 @@
             cbStatus.Location = new Point(671, 358);
             cbStatus.Margin = new Padding(3, 2, 3, 2);
             cbStatus.Name = "cbStatus";
-            cbStatus.Size = new Size(248, 37);
+            cbStatus.Size = new Size(248, 33);
             cbStatus.TabIndex = 40;
             // 
             // label4
@@ -71,7 +71,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(545, 361);
             label4.Name = "label4";
-            label4.Size = new Size(100, 29);
+            label4.Size = new Size(86, 25);
             label4.TabIndex = 39;
             label4.Text = "Status:";
             // 
@@ -80,7 +80,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(545, 273);
             label3.Name = "label3";
-            label3.Size = new Size(72, 29);
+            label3.Size = new Size(63, 25);
             label3.TabIndex = 38;
             label3.Text = "Line:";
             // 
@@ -89,7 +89,7 @@
             txtLine.Location = new Point(671, 270);
             txtLine.Margin = new Padding(3, 2, 3, 2);
             txtLine.Name = "txtLine";
-            txtLine.Size = new Size(248, 37);
+            txtLine.Size = new Size(248, 32);
             txtLine.TabIndex = 37;
             // 
             // label1
@@ -97,7 +97,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(974, 277);
             label1.Name = "label1";
-            label1.Size = new Size(184, 29);
+            label1.Size = new Size(156, 25);
             label1.TabIndex = 35;
             label1.Text = "Booking Date:";
             // 
@@ -120,7 +120,7 @@
             dateTimeBooking.Location = new Point(974, 324);
             dateTimeBooking.Margin = new Padding(6);
             dateTimeBooking.Name = "dateTimeBooking";
-            dateTimeBooking.Size = new Size(448, 37);
+            dateTimeBooking.Size = new Size(448, 32);
             dateTimeBooking.TabIndex = 42;
             // 
             // panel1
@@ -181,9 +181,10 @@
             lblFeedback.Location = new Point(90, 370);
             lblFeedback.Margin = new Padding(0);
             lblFeedback.Name = "lblFeedback";
-            lblFeedback.Size = new Size(135, 32);
+            lblFeedback.Size = new Size(115, 26);
             lblFeedback.TabIndex = 8;
             lblFeedback.Text = "Feedback";
+            lblFeedback.Click += lblFeedback_Click;
             // 
             // label7
             // 
@@ -194,9 +195,10 @@
             label7.Location = new Point(85, 287);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
-            label7.Size = new Size(187, 32);
+            label7.Size = new Size(157, 26);
             label7.TabIndex = 12;
             label7.Text = "Search & Book";
+          
             // 
             // panel2
             // 
@@ -217,7 +219,7 @@
             label2.Location = new Point(83, 17);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
-            label2.Size = new Size(102, 32);
+            label2.Size = new Size(87, 26);
             label2.TabIndex = 15;
             label2.Text = "Logout";
             // 
@@ -251,13 +253,13 @@
             label16.Location = new Point(654, 16);
             label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(110, 33);
+            label16.Size = new Size(92, 27);
             label16.TabIndex = 72;
             label16.Text = "Booking";
             // 
             // UserBookForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 29F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1731, 788);
