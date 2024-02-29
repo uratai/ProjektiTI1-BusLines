@@ -1,5 +1,6 @@
 ﻿using BusLines.Bookings;
 using BusLines.Feedback;
+using BusLines.Lines;
 using MenagjimiAutobusav.DAL;
 using System;
 using System.Collections.Generic;
@@ -75,7 +76,7 @@ namespace BusLines.Authentication
                             else if (selectedRole.Equals("Admin", StringComparison.OrdinalIgnoreCase))
                             {
                                 // Open AdminForm and pass user ID
-                                AdminBookForm adminForm = new AdminBookForm();
+                                AdminFormLines adminForm = new AdminFormLines();
                                 adminForm.Show();
                             }
                         }
@@ -90,11 +91,6 @@ namespace BusLines.Authentication
                     }
                 }
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
       

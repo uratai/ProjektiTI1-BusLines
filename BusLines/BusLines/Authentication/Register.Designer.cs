@@ -63,7 +63,7 @@
             lblBackLogIn.Location = new Point(154, 664);
             lblBackLogIn.Margin = new Padding(2, 0, 2, 0);
             lblBackLogIn.Name = "lblBackLogIn";
-            lblBackLogIn.Size = new Size(210, 26);
+            lblBackLogIn.Size = new Size(183, 23);
             lblBackLogIn.TabIndex = 43;
             lblBackLogIn.Text = "Go back to Log In";
             lblBackLogIn.Click += lblBackLogIn_Click;
@@ -74,7 +74,7 @@
             txtEmail.Location = new Point(112, 244);
             txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(287, 37);
+            txtEmail.Size = new Size(287, 32);
             txtEmail.TabIndex = 42;
             // 
             // label3
@@ -84,7 +84,7 @@
             label3.Location = new Point(112, 203);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(88, 29);
+            label3.Size = new Size(77, 25);
             label3.TabIndex = 41;
             label3.Text = "Email:";
             // 
@@ -100,6 +100,7 @@
             btnRegister.TabIndex = 40;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // cmbRole
             // 
@@ -109,7 +110,7 @@
             cmbRole.Location = new Point(112, 518);
             cmbRole.Margin = new Padding(2);
             cmbRole.Name = "cmbRole";
-            cmbRole.Size = new Size(287, 37);
+            cmbRole.Size = new Size(287, 33);
             cmbRole.TabIndex = 39;
             // 
             // txtPassword
@@ -118,7 +119,7 @@
             txtPassword.Location = new Point(112, 434);
             txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(287, 37);
+            txtPassword.Size = new Size(287, 32);
             txtPassword.TabIndex = 38;
             // 
             // txtUserName
@@ -127,7 +128,7 @@
             txtUserName.Location = new Point(112, 336);
             txtUserName.Margin = new Padding(2);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(287, 37);
+            txtUserName.Size = new Size(287, 32);
             txtUserName.TabIndex = 37;
             // 
             // lblUserType
@@ -137,7 +138,7 @@
             lblUserType.Location = new Point(112, 487);
             lblUserType.Margin = new Padding(2, 0, 2, 0);
             lblUserType.Name = "lblUserType";
-            lblUserType.Size = new Size(75, 29);
+            lblUserType.Size = new Size(65, 25);
             lblUserType.TabIndex = 36;
             lblUserType.Text = "Role:";
             // 
@@ -148,7 +149,7 @@
             label2.Location = new Point(112, 392);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(113, 29);
+            label2.Size = new Size(95, 25);
             label2.TabIndex = 35;
             label2.Text = "Pasword";
             // 
@@ -159,7 +160,7 @@
             label5.Location = new Point(112, 296);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(134, 29);
+            label5.Size = new Size(114, 25);
             label5.TabIndex = 34;
             label5.Text = "Username";
             // 
@@ -171,14 +172,14 @@
             lblCloseR.Location = new Point(516, -1);
             lblCloseR.Margin = new Padding(4, 0, 4, 0);
             lblCloseR.Name = "lblCloseR";
-            lblCloseR.Size = new Size(44, 44);
+            lblCloseR.Size = new Size(36, 36);
             lblCloseR.TabIndex = 45;
             lblCloseR.Text = "X";
             lblCloseR.Click += lblCloseR_Click;
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(15F, 29F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(560, 716);

@@ -63,53 +63,36 @@ namespace BusLines.Bookings
             }
         }
 
-
-
-        private void lblLinesBook_Click(object sender, EventArgs e)
+        private void lblLinesCom_Click(object sender, EventArgs e)
         {
             AdminFormLines adminFormLines = new AdminFormLines();
             adminFormLines.Show();
             this.Hide();
-
         }
 
-
-
-        //private void lblBookingBook_Click(object sender, EventArgs e)
-        //{
-        //    AdminFormLines  bookingFormLines = new AdminFormLines();
-        //    bookingFormLines.Show();
-
-        //}
-
-        private void lblFeedbackBook_Click(object sender, EventArgs e)
-        {
-            FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
-            feedbackAdminForm.Show();
-            this.Hide();
-
-        }
-
-        private void lblLogOutBook_Click(object sender, EventArgs e)
-        {
-            LogIn logIn = new LogIn();
-            logIn.Show();
-            this.Hide();
-        }
-
-        private void lblCompanyBook_Click(object sender, EventArgs e)
+        private void lblCompanyCom_Click(object sender, EventArgs e)
         {
             AdminCompanyForm adminCompanyForm = new AdminCompanyForm();
             adminCompanyForm.Show();
             this.Hide();
         }
 
-        private void dataBookUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void lblFeedbackCom_Click(object sender, EventArgs e)
         {
+            FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
+            feedbackAdminForm.Show();
+            this.Hide();
+        }
 
+        private void lblLOgoutCom_Click(object sender, EventArgs e)
+        {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Hide();
         }
     }
 }
+
 
 
 

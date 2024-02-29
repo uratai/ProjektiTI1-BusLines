@@ -49,7 +49,7 @@
             label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(93, 245);
             label1.Name = "label1";
-            label1.Size = new Size(75, 29);
+            label1.Size = new Size(65, 25);
             label1.TabIndex = 34;
             label1.Text = "Role:";
             // 
@@ -60,7 +60,7 @@
             cbRole.Location = new Point(93, 292);
             cbRole.Margin = new Padding(3, 2, 3, 2);
             cbRole.Name = "cbRole";
-            cbRole.Size = new Size(366, 37);
+            cbRole.Size = new Size(366, 33);
             cbRole.TabIndex = 33;
             // 
             // btnLogin
@@ -83,7 +83,7 @@
             txtPassword.Location = new Point(93, 491);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(366, 37);
+            txtPassword.Size = new Size(366, 32);
             txtPassword.TabIndex = 30;
             // 
             // txtUserName
@@ -92,7 +92,7 @@
             txtUserName.Location = new Point(93, 397);
             txtUserName.Margin = new Padding(3, 2, 3, 2);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(366, 37);
+            txtUserName.Size = new Size(366, 32);
             txtUserName.TabIndex = 29;
             // 
             // lblPassword
@@ -101,7 +101,7 @@
             lblPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPassword.Location = new Point(93, 455);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(126, 29);
+            lblPassword.Size = new Size(105, 25);
             lblPassword.TabIndex = 28;
             lblPassword.Text = "Password";
             // 
@@ -111,7 +111,7 @@
             lblUsername.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblUsername.Location = new Point(93, 345);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(145, 29);
+            lblUsername.Size = new Size(123, 25);
             lblUsername.TabIndex = 27;
             lblUsername.Text = "Username:";
             // 
@@ -134,7 +134,7 @@
             label5.Location = new Point(1162, 739);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(72, 26);
+            label5.Size = new Size(62, 23);
             label5.TabIndex = 25;
             label5.Text = "Reset";
             // 
@@ -146,7 +146,7 @@
             lblCloseL.Location = new Point(516, -1);
             lblCloseL.Margin = new Padding(4, 0, 4, 0);
             lblCloseL.Name = "lblCloseL";
-            lblCloseL.Size = new Size(44, 44);
+            lblCloseL.Size = new Size(36, 36);
             lblCloseL.TabIndex = 24;
             lblCloseL.Text = "X";
             lblCloseL.Click += lblCloseL_Click;
@@ -157,14 +157,14 @@
             lblRegister.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblRegister.Location = new Point(218, 651);
             lblRegister.Name = "lblRegister";
-            lblRegister.Size = new Size(134, 29);
+            lblRegister.Size = new Size(113, 25);
             lblRegister.TabIndex = 35;
             lblRegister.Text = "Register...";
             lblRegister.Click += lblRegister_Click;
             // 
             // LogIn
             // 
-            AutoScaleDimensions = new SizeF(15F, 29F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(560, 716);
@@ -185,6 +185,7 @@
             Name = "LogIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";
+          
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();

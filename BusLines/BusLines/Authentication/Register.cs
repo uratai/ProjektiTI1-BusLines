@@ -33,9 +33,8 @@ namespace BusLines.Authentication
         }
 
 
-        private void btnRegister_Click_1(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
-
             string enteredEmail = txtEmail.Text;
             string enteredUsername = txtUserName.Text;
             string enteredPassword = txtPassword.Text;
@@ -65,9 +64,6 @@ namespace BusLines.Authentication
                 }
             }
         }
-
-       
     }
 }
-
 
