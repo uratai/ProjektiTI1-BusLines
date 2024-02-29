@@ -86,7 +86,7 @@
             label1.AccessibleName = "txtSourceLocation";
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(851, 335);
+            label1.Location = new Point(998, 424);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(0, 28);
@@ -97,7 +97,7 @@
             btnDelete.BackColor = Color.Teal;
             btnDelete.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(1120, 543);
+            btnDelete.Location = new Point(1267, 632);
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(137, 67);
@@ -110,7 +110,7 @@
             // 
             dataBookUsers.BackgroundColor = Color.Lavender;
             dataBookUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataBookUsers.Location = new Point(385, 162);
+            dataBookUsers.Location = new Point(532, 251);
             dataBookUsers.Name = "dataBookUsers";
             dataBookUsers.RowHeadersWidth = 51;
             dataBookUsers.RowTemplate.Height = 29;
@@ -135,7 +135,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(242, 634);
+            panel1.Size = new Size(242, 788);
             panel1.TabIndex = 67;
             // 
             // panel3
@@ -155,7 +155,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(242, 634);
+            panel3.Size = new Size(242, 788);
             panel3.TabIndex = 15;
             // 
             // pictureBox7
@@ -259,7 +259,7 @@
             panel4.BackColor = Color.MediumTurquoise;
             panel4.Controls.Add(lblLOgoutCom);
             panel4.Controls.Add(pictureBox12);
-            panel4.Location = new Point(2, 578);
+            panel4.Location = new Point(0, 717);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 60);
@@ -452,7 +452,7 @@
             panel5.Location = new Point(242, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1160, 53);
+            panel5.Size = new Size(1489, 53);
             panel5.TabIndex = 68;
             // 
             // label18
@@ -460,7 +460,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(444, 16);
+            label18.Location = new Point(645, 16);
             label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
             label18.Size = new Size(224, 27);
@@ -471,7 +471,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(385, 107);
+            label2.Location = new Point(532, 196);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(249, 26);
@@ -483,7 +483,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(1402, 634);
+            ClientSize = new Size(1731, 788);
             Controls.Add(label2);
             Controls.Add(panel5);
             Controls.Add(panel1);

@@ -115,7 +115,7 @@ namespace BusLines.Company
 
         private void lblLinesCom_Click(object sender, EventArgs e)
         {
-           AdminFormLines adminFormLines = new AdminFormLines();
+            AdminFormLines adminFormLines = new AdminFormLines();
             adminFormLines.Show();
             this.Hide();
 
@@ -138,7 +138,7 @@ namespace BusLines.Company
         }
 
         private void lblLOgoutCom_Click(object sender, EventArgs e)
-        { 
+        {
             LogIn logIn = new LogIn();
             logIn.Close();
 

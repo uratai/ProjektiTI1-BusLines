@@ -84,11 +84,11 @@
             // 
             dataFeedbackUser.BackgroundColor = Color.Lavender;
             dataFeedbackUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataFeedbackUser.Location = new Point(470, 199);
+            dataFeedbackUser.Location = new Point(459, 221);
             dataFeedbackUser.Name = "dataFeedbackUser";
             dataFeedbackUser.RowHeadersWidth = 51;
             dataFeedbackUser.RowTemplate.Height = 29;
-            dataFeedbackUser.Size = new Size(674, 280);
+            dataFeedbackUser.Size = new Size(767, 395);
             dataFeedbackUser.TabIndex = 0;
             // 
             // panel1
@@ -109,7 +109,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(242, 634);
+            panel1.Size = new Size(242, 788);
             panel1.TabIndex = 67;
             // 
             // panel3
@@ -129,7 +129,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(242, 634);
+            panel3.Size = new Size(242, 788);
             panel3.TabIndex = 15;
             // 
             // pictureBox7
@@ -233,7 +233,7 @@
             panel4.BackColor = Color.MediumTurquoise;
             panel4.Controls.Add(lblLogoutForm);
             panel4.Controls.Add(pictureBox12);
-            panel4.Location = new Point(2, 578);
+            panel4.Location = new Point(2, 702);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 60);
@@ -426,7 +426,7 @@
             panel5.Location = new Point(242, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1160, 53);
+            panel5.Size = new Size(1489, 53);
             panel5.TabIndex = 68;
             // 
             // label16
@@ -457,7 +457,7 @@
             btnDelete.BackColor = Color.Teal;
             btnDelete.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(1007, 532);
+            btnDelete.Location = new Point(1089, 678);
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(137, 67);
@@ -471,7 +471,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(1402, 634);
+            ClientSize = new Size(1731, 788);
             Controls.Add(btnDelete);
             Controls.Add(label1);
             Controls.Add(panel5);

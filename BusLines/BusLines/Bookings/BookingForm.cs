@@ -1,4 +1,5 @@
 ﻿using BusLines.DAL;
+using BusLines.Feedback;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -73,6 +74,13 @@ namespace BusLines.Bookings
                 MessageBox.Show("An error occurred while searching for the destination: " + ex.Message);
             }
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            FeedbackUserForm feedbackUserForm = new FeedbackUserForm(UserId);
+            feedbackUserForm.Show();
+            this.Hide();
         }
     }
 }

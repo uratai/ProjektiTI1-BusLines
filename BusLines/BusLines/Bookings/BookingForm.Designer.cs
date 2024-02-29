@@ -92,7 +92,7 @@
             panel5.Location = new Point(303, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1450, 66);
+            panel5.Size = new Size(1428, 66);
             panel5.TabIndex = 48;
             // 
             // label16
@@ -102,7 +102,7 @@
             label16.ForeColor = Color.White;
             label16.Location = new Point(599, 20);
             label16.Name = "label16";
-            label16.Size = new Size(180, 33);
+            label16.Size = new Size(151, 27);
             label16.TabIndex = 75;
             label16.Text = "Booking Form";
             // 
@@ -124,7 +124,7 @@
             txtDestinationTrip.Location = new Point(1031, 138);
             txtDestinationTrip.Margin = new Padding(2);
             txtDestinationTrip.Name = "txtDestinationTrip";
-            txtDestinationTrip.Size = new Size(266, 37);
+            txtDestinationTrip.Size = new Size(266, 32);
             txtDestinationTrip.TabIndex = 73;
             // 
             // txtSourceTrip
@@ -133,7 +133,7 @@
             txtSourceTrip.Location = new Point(516, 144);
             txtSourceTrip.Margin = new Padding(2);
             txtSourceTrip.Name = "txtSourceTrip";
-            txtSourceTrip.Size = new Size(257, 37);
+            txtSourceTrip.Size = new Size(257, 32);
             txtSourceTrip.TabIndex = 72;
             // 
             // label13
@@ -143,7 +143,7 @@
             label13.Location = new Point(868, 146);
             label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(159, 29);
+            label13.Size = new Size(136, 25);
             label13.TabIndex = 71;
             label13.Text = "Destination:";
             // 
@@ -154,7 +154,7 @@
             label14.Location = new Point(405, 148);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(107, 29);
+            label14.Size = new Size(91, 25);
             label14.TabIndex = 70;
             label14.Text = "Source:";
             // 
@@ -180,7 +180,7 @@
             label5.Location = new Point(92, 405);
             label5.Margin = new Padding(0);
             label5.Name = "label5";
-            label5.Size = new Size(62, 32);
+            label5.Size = new Size(52, 26);
             label5.TabIndex = 8;
             label5.Text = "Bus";
             // 
@@ -202,7 +202,7 @@
             label4.Location = new Point(104, 21);
             label4.Margin = new Padding(0);
             label4.Name = "label4";
-            label4.Size = new Size(102, 32);
+            label4.Size = new Size(87, 26);
             label4.TabIndex = 15;
             label4.Text = "Logout";
             // 
@@ -237,7 +237,7 @@
             label6.Location = new Point(92, 503);
             label6.Margin = new Padding(0);
             label6.Name = "label6";
-            label6.Size = new Size(146, 32);
+            label6.Size = new Size(122, 26);
             label6.TabIndex = 10;
             label6.Text = "Passenger";
             // 
@@ -250,7 +250,7 @@
             label7.Location = new Point(92, 305);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
-            label7.Size = new Size(187, 32);
+            label7.Size = new Size(157, 26);
             label7.TabIndex = 12;
             label7.Text = "Search & Book";
             // 
@@ -274,7 +274,7 @@
             label8.Location = new Point(92, 603);
             label8.Margin = new Padding(0);
             label8.Name = "label8";
-            label8.Size = new Size(135, 32);
+            label8.Size = new Size(115, 26);
             label8.TabIndex = 8;
             label8.Text = "Feedback";
             // 
@@ -328,7 +328,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(303, 792);
+            panel3.Size = new Size(303, 788);
             panel3.TabIndex = 15;
             // 
             // pictureBox7
@@ -373,9 +373,10 @@
             label2.Location = new Point(92, 603);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
-            label2.Size = new Size(135, 32);
+            label2.Size = new Size(115, 26);
             label2.TabIndex = 8;
             label2.Text = "Feedback";
+            label2.Click += label2_Click;
             // 
             // pictureBox10
             // 
@@ -397,7 +398,7 @@
             label3.Location = new Point(92, 305);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Size = new Size(187, 32);
+            label3.Size = new Size(157, 26);
             label3.TabIndex = 12;
             label3.Text = "Search & Book";
             // 
@@ -410,7 +411,7 @@
             label9.Location = new Point(92, 503);
             label9.Margin = new Padding(0);
             label9.Name = "label9";
-            label9.Size = new Size(146, 32);
+            label9.Size = new Size(122, 26);
             label9.TabIndex = 10;
             label9.Text = "Passenger";
             // 
@@ -443,7 +444,7 @@
             label10.Location = new Point(104, 21);
             label10.Margin = new Padding(0);
             label10.Name = "label10";
-            label10.Size = new Size(102, 32);
+            label10.Size = new Size(87, 26);
             label10.TabIndex = 15;
             label10.Text = "Logout";
             // 
@@ -467,7 +468,7 @@
             label11.Location = new Point(92, 405);
             label11.Margin = new Padding(0);
             label11.Name = "label11";
-            label11.Size = new Size(62, 32);
+            label11.Size = new Size(52, 26);
             label11.TabIndex = 8;
             label11.Text = "Bus";
             // 
@@ -489,7 +490,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(303, 792);
+            panel1.Size = new Size(303, 788);
             panel1.TabIndex = 47;
             // 
             // label1
@@ -499,15 +500,15 @@
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(239, 450);
             label1.Name = "label1";
-            label1.Size = new Size(0, 32);
+            label1.Size = new Size(0, 28);
             label1.TabIndex = 46;
             // 
             // BookingForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 29F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(1753, 792);
+            ClientSize = new Size(1731, 788);
             Controls.Add(dataBookForm);
             Controls.Add(txtDestinationTrip);
             Controls.Add(txtSourceTrip);

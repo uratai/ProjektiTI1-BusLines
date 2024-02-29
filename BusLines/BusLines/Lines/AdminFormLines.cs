@@ -205,6 +205,11 @@ namespace BusLines.Lines
             this.Hide();
 
         }
+
+        private void Mainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
