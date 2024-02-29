@@ -148,10 +148,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(40, 20);
+            pictureBox7.Location = new Point(31, 31);
             pictureBox7.Margin = new Padding(0);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(228, 161);
+            pictureBox7.Size = new Size(228, 180);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
@@ -208,12 +208,12 @@
             label3.BackColor = Color.DarkCyan;
             label3.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(92, 305);
+            label3.Location = new Point(93, 305);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Size = new Size(187, 32);
+            label3.Size = new Size(80, 32);
             label3.TabIndex = 12;
-            label3.Text = "Search & Book";
+            label3.Text = "Lines";
             // 
             // label9
             // 
@@ -224,9 +224,9 @@
             label9.Location = new Point(92, 503);
             label9.Margin = new Padding(0);
             label9.Name = "label9";
-            label9.Size = new Size(146, 32);
+            label9.Size = new Size(132, 32);
             label9.TabIndex = 10;
-            label9.Text = "Passenger";
+            label9.Text = "Bookings";
             // 
             // pictureBox11
             // 
@@ -281,9 +281,9 @@
             label11.Location = new Point(92, 405);
             label11.Margin = new Padding(0);
             label11.Name = "label11";
-            label11.Size = new Size(62, 32);
+            label11.Size = new Size(136, 32);
             label11.TabIndex = 8;
-            label11.Text = "Bus";
+            label11.Text = "Company";
             // 
             // pictureBox6
             // 

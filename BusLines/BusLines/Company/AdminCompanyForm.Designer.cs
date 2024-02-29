@@ -29,6 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCompanyForm));
+            label1 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            btnDelete = new Button();
+            dataAddCompany = new DataGridView();
+            btnUpdate = new Button();
+            cbStatus = new ComboBox();
+            label14 = new Label();
+            label15 = new Label();
+            txtCompanyName = new TextBox();
+            label16 = new Label();
+            label17 = new Label();
+            btnAdd = new Button();
+            txtTotalSeats = new TextBox();
+            txtCompanyNumber = new TextBox();
             panel1 = new Panel();
             panel3 = new Panel();
             pictureBox7 = new PictureBox();
@@ -55,22 +70,8 @@
             label4 = new Label();
             pictureBox1 = new PictureBox();
             label5 = new Label();
-            label1 = new Label();
             panel5 = new Panel();
-            label13 = new Label();
-            label12 = new Label();
-            btnDelete = new Button();
-            dataAddCompany = new DataGridView();
-            btnUpdate = new Button();
-            cbStatus = new ComboBox();
-            label14 = new Label();
-            label15 = new Label();
-            txtCompanyName = new TextBox();
-            label16 = new Label();
-            label17 = new Label();
-            btnAdd = new Button();
-            txtTotalSeats = new TextBox();
-            txtCompanyNumber = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataAddCompany).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -87,8 +88,172 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataAddCompany).BeginInit();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AccessibleName = "txtSourceLocation";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(953, 450);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 32);
+            label1.TabIndex = 48;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(755, 114);
+            label13.Margin = new Padding(2, 0, 2, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(179, 32);
+            label13.TabIndex = 65;
+            label13.Text = "List of Buses";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(374, 114);
+            label12.Margin = new Padding(2, 0, 2, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(160, 32);
+            label12.TabIndex = 64;
+            label12.Text = "Bus Details";
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.Teal;
+            btnDelete.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(435, 723);
+            btnDelete.Margin = new Padding(2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(115, 62);
+            btnDelete.TabIndex = 63;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // dataAddCompany
+            // 
+            dataAddCompany.BackgroundColor = Color.AliceBlue;
+            dataAddCompany.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataAddCompany.Location = new Point(735, 215);
+            dataAddCompany.Margin = new Padding(2);
+            dataAddCompany.Name = "dataAddCompany";
+            dataAddCompany.RowHeadersWidth = 62;
+            dataAddCompany.RowTemplate.Height = 33;
+            dataAddCompany.Size = new Size(958, 409);
+            dataAddCompany.TabIndex = 62;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.Teal;
+            btnUpdate.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(518, 629);
+            btnUpdate.Margin = new Padding(2);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(115, 62);
+            btnUpdate.TabIndex = 61;
+            btnUpdate.Text = "Edit";
+            btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // cbStatus
+            // 
+            cbStatus.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cbStatus.FormattingEnabled = true;
+            cbStatus.Items.AddRange(new object[] { "Active", "Out of Service" });
+            cbStatus.Location = new Point(361, 543);
+            cbStatus.Margin = new Padding(2);
+            cbStatus.Name = "cbStatus";
+            cbStatus.Size = new Size(272, 37);
+            cbStatus.TabIndex = 60;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.Location = new Point(361, 503);
+            label14.Margin = new Padding(2, 0, 2, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(100, 29);
+            label14.TabIndex = 59;
+            label14.Text = "Status:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.Location = new Point(360, 215);
+            label15.Margin = new Padding(2, 0, 2, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(214, 29);
+            label15.TabIndex = 58;
+            label15.Text = "Company Name:";
+            // 
+            // txtCompanyName
+            // 
+            txtCompanyName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCompanyName.Location = new Point(360, 255);
+            txtCompanyName.Margin = new Padding(2);
+            txtCompanyName.Name = "txtCompanyName";
+            txtCompanyName.Size = new Size(273, 37);
+            txtCompanyName.TabIndex = 57;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.Location = new Point(360, 408);
+            label16.Margin = new Padding(2, 0, 2, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(154, 29);
+            label16.TabIndex = 56;
+            label16.Text = "Total Seats:";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.Location = new Point(360, 305);
+            label17.Margin = new Padding(2, 0, 2, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(240, 29);
+            label17.TabIndex = 55;
+            label17.Text = "Company Number:";
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.Teal;
+            btnAdd.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAdd.ForeColor = Color.White;
+            btnAdd.Location = new Point(361, 629);
+            btnAdd.Margin = new Padding(2);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(115, 62);
+            btnAdd.TabIndex = 54;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // txtTotalSeats
+            // 
+            txtTotalSeats.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTotalSeats.Location = new Point(361, 448);
+            txtTotalSeats.Margin = new Padding(2);
+            txtTotalSeats.Name = "txtTotalSeats";
+            txtTotalSeats.Size = new Size(272, 37);
+            txtTotalSeats.TabIndex = 53;
+            // 
+            // txtCompanyNumber
+            // 
+            txtCompanyNumber.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCompanyNumber.Location = new Point(361, 350);
+            txtCompanyNumber.Margin = new Padding(2);
+            txtCompanyNumber.Name = "txtCompanyNumber";
+            txtCompanyNumber.Size = new Size(272, 37);
+            txtCompanyNumber.TabIndex = 52;
             // 
             // panel1
             // 
@@ -109,7 +274,7 @@
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(303, 788);
-            panel1.TabIndex = 49;
+            panel1.TabIndex = 66;
             // 
             // panel3
             // 
@@ -134,10 +299,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(40, 20);
+            pictureBox7.Location = new Point(31, 31);
             pictureBox7.Margin = new Padding(0);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(228, 161);
+            pictureBox7.Size = new Size(228, 180);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
@@ -194,12 +359,12 @@
             label3.BackColor = Color.DarkCyan;
             label3.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(92, 305);
+            label3.Location = new Point(93, 305);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Size = new Size(187, 32);
+            label3.Size = new Size(80, 32);
             label3.TabIndex = 12;
-            label3.Text = "Search & Book";
+            label3.Text = "Lines";
             // 
             // label9
             // 
@@ -210,9 +375,9 @@
             label9.Location = new Point(92, 503);
             label9.Margin = new Padding(0);
             label9.Name = "label9";
-            label9.Size = new Size(146, 32);
+            label9.Size = new Size(132, 32);
             label9.TabIndex = 10;
-            label9.Text = "Passenger";
+            label9.Text = "Bookings";
             // 
             // pictureBox11
             // 
@@ -267,9 +432,9 @@
             label11.Location = new Point(92, 405);
             label11.Margin = new Padding(0);
             label11.Name = "label11";
-            label11.Size = new Size(62, 32);
+            label11.Size = new Size(136, 32);
             label11.TabIndex = 8;
-            label11.Text = "Bus";
+            label11.Text = "Company";
             // 
             // pictureBox6
             // 
@@ -411,16 +576,6 @@
             label5.TabIndex = 8;
             label5.Text = "Bus";
             // 
-            // label1
-            // 
-            label1.AccessibleName = "txtSourceLocation";
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(953, 450);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 32);
-            label1.TabIndex = 48;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.MediumTurquoise;
@@ -429,156 +584,7 @@
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(1428, 66);
-            panel5.TabIndex = 50;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(755, 114);
-            label13.Margin = new Padding(2, 0, 2, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(179, 32);
-            label13.TabIndex = 65;
-            label13.Text = "List of Buses";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(374, 114);
-            label12.Margin = new Padding(2, 0, 2, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(160, 32);
-            label12.TabIndex = 64;
-            label12.Text = "Bus Details";
-            // 
-            // btnDelete
-            // 
-            btnDelete.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(435, 723);
-            btnDelete.Margin = new Padding(2);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(115, 62);
-            btnDelete.TabIndex = 63;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // dataAddCompany
-            // 
-            dataAddCompany.BackgroundColor = Color.AliceBlue;
-            dataAddCompany.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataAddCompany.Location = new Point(735, 215);
-            dataAddCompany.Margin = new Padding(2);
-            dataAddCompany.Name = "dataAddCompany";
-            dataAddCompany.RowHeadersWidth = 62;
-            dataAddCompany.RowTemplate.Height = 33;
-            dataAddCompany.Size = new Size(958, 409);
-            dataAddCompany.TabIndex = 62;
-            // 
-            // btnUpdate
-            // 
-            btnUpdate.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(518, 629);
-            btnUpdate.Margin = new Padding(2);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(115, 62);
-            btnUpdate.TabIndex = 61;
-            btnUpdate.Text = "Edit";
-            btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // cbStatus
-            // 
-            cbStatus.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            cbStatus.FormattingEnabled = true;
-            cbStatus.Items.AddRange(new object[] { "Active", "Out of Service" });
-            cbStatus.Location = new Point(361, 543);
-            cbStatus.Margin = new Padding(2);
-            cbStatus.Name = "cbStatus";
-            cbStatus.Size = new Size(272, 37);
-            cbStatus.TabIndex = 60;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(361, 503);
-            label14.Margin = new Padding(2, 0, 2, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(100, 29);
-            label14.TabIndex = 59;
-            label14.Text = "Status:";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(360, 215);
-            label15.Margin = new Padding(2, 0, 2, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(214, 29);
-            label15.TabIndex = 58;
-            label15.Text = "Company Name:";
-            // 
-            // txtCompanyName
-            // 
-            txtCompanyName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCompanyName.Location = new Point(360, 255);
-            txtCompanyName.Margin = new Padding(2);
-            txtCompanyName.Name = "txtCompanyName";
-            txtCompanyName.Size = new Size(273, 37);
-            txtCompanyName.TabIndex = 57;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.Location = new Point(360, 408);
-            label16.Margin = new Padding(2, 0, 2, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(154, 29);
-            label16.TabIndex = 56;
-            label16.Text = "Total Seats:";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(360, 305);
-            label17.Margin = new Padding(2, 0, 2, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(240, 29);
-            label17.TabIndex = 55;
-            label17.Text = "Company Number:";
-            // 
-            // btnAdd
-            // 
-            btnAdd.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAdd.Location = new Point(361, 629);
-            btnAdd.Margin = new Padding(2);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(115, 62);
-            btnAdd.TabIndex = 54;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // txtTotalSeats
-            // 
-            txtTotalSeats.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTotalSeats.Location = new Point(361, 448);
-            txtTotalSeats.Margin = new Padding(2);
-            txtTotalSeats.Name = "txtTotalSeats";
-            txtTotalSeats.Size = new Size(272, 37);
-            txtTotalSeats.TabIndex = 53;
-            // 
-            // txtCompanyNumber
-            // 
-            txtCompanyNumber.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCompanyNumber.Location = new Point(361, 350);
-            txtCompanyNumber.Margin = new Padding(2);
-            txtCompanyNumber.Name = "txtCompanyNumber";
-            txtCompanyNumber.Size = new Size(272, 37);
-            txtCompanyNumber.TabIndex = 52;
+            panel5.TabIndex = 67;
             // 
             // AdminCompanyForm
             // 
@@ -586,6 +592,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1731, 788);
+            Controls.Add(panel5);
+            Controls.Add(panel1);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(btnDelete);
@@ -600,14 +608,13 @@
             Controls.Add(btnAdd);
             Controls.Add(txtTotalSeats);
             Controls.Add(txtCompanyNumber);
-            Controls.Add(panel5);
-            Controls.Add(panel1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 4, 4, 4);
             Name = "AdminCompanyForm";
             Text = "AdminCompanyForm";
             Load += AdminCompanyForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dataAddCompany).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
@@ -628,13 +635,26 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataAddCompany).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
+        private Label label1;
+        private Label label13;
+        private Label label12;
+        private Button btnDelete;
+        private DataGridView dataAddCompany;
+        private Button btnUpdate;
+        private ComboBox cbStatus;
+        private Label label14;
+        private Label label15;
+        private TextBox txtCompanyName;
+        private Label label16;
+        private Label label17;
+        private Button btnAdd;
+        private TextBox txtTotalSeats;
+        private TextBox txtCompanyNumber;
         private Panel panel1;
         private Panel panel3;
         private PictureBox pictureBox7;
@@ -661,21 +681,6 @@
         private Label label4;
         private PictureBox pictureBox1;
         private Label label5;
-        private Label label1;
         private Panel panel5;
-        private Label label13;
-        private Label label12;
-        private Button btnDelete;
-        private DataGridView dataAddCompany;
-        private Button btnUpdate;
-        private ComboBox cbStatus;
-        private Label label14;
-        private Label label15;
-        private TextBox txtCompanyName;
-        private Label label16;
-        private Label label17;
-        private Button btnAdd;
-        private TextBox txtTotalSeats;
-        private TextBox txtCompanyNumber;
     }
 }

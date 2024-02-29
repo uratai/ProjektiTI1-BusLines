@@ -111,7 +111,7 @@
             btnBook.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnBook.ForeColor = Color.White;
             btnBook.Location = new Point(652, 488);
-            btnBook.Margin = new Padding(6, 6, 6, 6);
+            btnBook.Margin = new Padding(6);
             btnBook.Name = "btnBook";
             btnBook.Size = new Size(171, 84);
             btnBook.TabIndex = 41;
@@ -122,7 +122,7 @@
             // dateTimeBooking
             // 
             dateTimeBooking.Location = new Point(944, 305);
-            dateTimeBooking.Margin = new Padding(6, 6, 6, 6);
+            dateTimeBooking.Margin = new Padding(6);
             dateTimeBooking.Name = "dateTimeBooking";
             dateTimeBooking.Size = new Size(448, 37);
             dateTimeBooking.TabIndex = 42;
