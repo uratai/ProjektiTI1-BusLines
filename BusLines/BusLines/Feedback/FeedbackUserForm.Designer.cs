@@ -253,7 +253,7 @@
             panel2.BackColor = Color.MediumTurquoise;
             panel2.Controls.Add(label4);
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(2, 703);
+            panel2.Location = new Point(2, 726);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 60);

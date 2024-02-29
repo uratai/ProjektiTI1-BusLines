@@ -146,7 +146,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(242, 788);
+            panel1.Size = new Size(303, 788);
             panel1.TabIndex = 54;
             // 
             // pictureBox6
@@ -248,10 +248,10 @@
             panel2.BackColor = Color.MediumTurquoise;
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(2, 706);
+            panel2.Location = new Point(2, 728);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(240, 60);
+            panel2.Size = new Size(301, 60);
             panel2.TabIndex = 2;
             // 
             // label2
@@ -295,10 +295,10 @@
             panel5.BackColor = Color.MediumTurquoise;
             panel5.Controls.Add(label16);
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(242, 0);
+            panel5.Location = new Point(303, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1489, 53);
+            panel5.Size = new Size(1428, 53);
             panel5.TabIndex = 70;
             // 
             // label16

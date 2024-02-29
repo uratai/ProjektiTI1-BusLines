@@ -43,7 +43,8 @@ namespace BusLines.Feedback
                 MessageBox.Show("Feedback added successfully!");
 
                 feedback.UpdateDataGridView();
-                feedback.Show();
+
+                txtFeedbackText.Text = "";
 
 
             }

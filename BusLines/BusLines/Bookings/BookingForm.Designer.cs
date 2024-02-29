@@ -117,6 +117,7 @@
             dataBookForm.RowTemplate.Height = 33;
             dataBookForm.Size = new Size(934, 437);
             dataBookForm.TabIndex = 74;
+            dataBookForm.CellContentClick += dataBookForm_CellContentClick_1;
             // 
             // txtDestinationTrip
             // 
@@ -170,6 +171,7 @@
             button4.TabIndex = 69;
             button4.Text = "Search";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label5
             // 

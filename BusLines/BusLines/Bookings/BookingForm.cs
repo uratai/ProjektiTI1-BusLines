@@ -30,28 +30,16 @@ namespace BusLines.Bookings
 
         }
 
-        private void dataBookForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void label2_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                // Get the selected row
-                DataGridViewRow selectedRow = dataBookForm.Rows[e.RowIndex];
-
-                // Extract the data from the selected row
-                int lineId = Convert.ToInt32(selectedRow.Cells["LineID"].Value);
-                //string companyId = Convert.ToString(selectedRow.Cells["CompanyName"].Value); 
-                string departureCity = Convert.ToString(selectedRow.Cells["DepartureCity"].Value);
-                string arrivalCity = Convert.ToString(selectedRow.Cells["ArrivalCity"].Value);
-                DateTime departureTime = Convert.ToDateTime(selectedRow.Cells["DepartureTime"].Value);
-                DateTime arrivalTime = Convert.ToDateTime(selectedRow.Cells["ArrivalTime"].Value);
-
-                // Open the new form for booking a ticket with the extracted data
-                UserBookForm bookForm = new UserBookForm(UserId, lineId, departureCity, arrivalCity, departureTime, arrivalTime);
-                bookForm.ShowDialog(); // Show the form as a modal dialog
-            }
+            FeedbackUserForm feedbackUserForm = new FeedbackUserForm(UserId);
+            feedbackUserForm.Show();
+            this.Hide();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             string departureCity = txtSourceTrip.Text.Trim();
             string arrivalCity = txtDestinationTrip.Text.Trim();
@@ -76,11 +64,27 @@ namespace BusLines.Bookings
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void dataBookForm_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            FeedbackUserForm feedbackUserForm = new FeedbackUserForm(UserId);
-            feedbackUserForm.Show();
-            this.Hide();
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = dataBookForm.Rows[e.RowIndex];
+
+                // Extract the data from the selected row
+                int lineId = Convert.ToInt32(selectedRow.Cells["LineID"].Value);
+                //string companyId = Convert.ToString(selectedRow.Cells["CompanyName"].Value); 
+                string departureCity = Convert.ToString(selectedRow.Cells["DepartureCity"].Value);
+                string arrivalCity = Convert.ToString(selectedRow.Cells["ArrivalCity"].Value);
+                DateTime departureTime = Convert.ToDateTime(selectedRow.Cells["DepartureTime"].Value);
+                DateTime arrivalTime = Convert.ToDateTime(selectedRow.Cells["ArrivalTime"].Value);
+
+                // Open the new form for booking a ticket with the extracted data
+                UserBookForm bookForm = new UserBookForm(UserId, lineId, departureCity, arrivalCity, departureTime, arrivalTime);
+                bookForm.ShowDialog(); // Show the form as a modal dialog
+            }
         }
     }
-}
+    }
+
+

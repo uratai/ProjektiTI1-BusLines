@@ -70,8 +70,8 @@
             label4 = new Label();
             pictureBox1 = new PictureBox();
             label5 = new Label();
-            panel5 = new Panel();
             label18 = new Label();
+            panel5 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataAddCompany).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -299,7 +299,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(242, 788);
+            panel3.Size = new Size(303, 788);
             panel3.TabIndex = 15;
             // 
             // pictureBox7
@@ -588,17 +588,6 @@
             label5.TabIndex = 8;
             label5.Text = "Bus";
             // 
-            // panel5
-            // 
-            panel5.BackColor = Color.MediumTurquoise;
-            panel5.Controls.Add(label18);
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(242, 0);
-            panel5.Margin = new Padding(0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(1489, 53);
-            panel5.TabIndex = 67;
-            // 
             // label18
             // 
             label18.AutoSize = true;
@@ -610,6 +599,17 @@
             label18.Size = new Size(179, 27);
             label18.TabIndex = 72;
             label18.Text = "Admin Company";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.MediumTurquoise;
+            panel5.Controls.Add(label18);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(242, 0);
+            panel5.Margin = new Padding(0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1489, 53);
+            panel5.TabIndex = 67;
             // 
             // AdminCompanyForm
             // 
@@ -706,7 +706,7 @@
         private Label label4;
         private PictureBox pictureBox1;
         private Label label5;
-        private Panel panel5;
         private Label label18;
+        private Panel panel5;
     }
 }
