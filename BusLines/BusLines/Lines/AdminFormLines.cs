@@ -1,4 +1,5 @@
-﻿using BusLines.DAL;
+﻿using BusLines.Authentication;
+using BusLines.DAL;
 using MenagjimiAutobusav.DAL;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,14 @@ namespace BusLines.Lines
         public AdminFormLines()
         {
             InitializeComponent();
+
+        }
+
+        private void lblLines_Click(object sender, EventArgs e)
+        {
+            
+            AdminFormLines lines = new AdminFormLines();
+            lines.Show();
 
         }
 
@@ -151,10 +160,9 @@ namespace BusLines.Lines
             }
         }
 
-        private void dataAddLines_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+       
 
-        }
+      
     }
 }
 

@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingForm));
             panel5 = new Panel();
+            label16 = new Label();
             dataBookForm = new DataGridView();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtDestinationTrip = new TextBox();
+            txtSourceTrip = new TextBox();
             label13 = new Label();
             label14 = new Label();
             button4 = new Button();
@@ -63,7 +64,6 @@
             label11 = new Label();
             panel1 = new Panel();
             label1 = new Label();
-            label16 = new Label();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataBookForm).BeginInit();
             panel2.SuspendLayout();
@@ -95,6 +95,17 @@
             panel5.Size = new Size(1450, 66);
             panel5.TabIndex = 48;
             // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(599, 20);
+            label16.Name = "label16";
+            label16.Size = new Size(180, 33);
+            label16.TabIndex = 75;
+            label16.Text = "Booking Form";
+            // 
             // dataBookForm
             // 
             dataBookForm.BackgroundColor = Color.Lavender;
@@ -107,23 +118,23 @@
             dataBookForm.Size = new Size(934, 437);
             dataBookForm.TabIndex = 74;
             // 
-            // textBox4
+            // txtDestinationTrip
             // 
-            textBox4.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(1031, 138);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(266, 37);
-            textBox4.TabIndex = 73;
+            txtDestinationTrip.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDestinationTrip.Location = new Point(1031, 138);
+            txtDestinationTrip.Margin = new Padding(2);
+            txtDestinationTrip.Name = "txtDestinationTrip";
+            txtDestinationTrip.Size = new Size(266, 37);
+            txtDestinationTrip.TabIndex = 73;
             // 
-            // textBox5
+            // txtSourceTrip
             // 
-            textBox5.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(516, 144);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(257, 37);
-            textBox5.TabIndex = 72;
+            txtSourceTrip.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSourceTrip.Location = new Point(516, 144);
+            txtSourceTrip.Margin = new Padding(2);
+            txtSourceTrip.Name = "txtSourceTrip";
+            txtSourceTrip.Size = new Size(257, 37);
+            txtSourceTrip.TabIndex = 72;
             // 
             // label13
             // 
@@ -491,17 +502,6 @@
             label1.Size = new Size(0, 32);
             label1.TabIndex = 46;
             // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(599, 20);
-            label16.Name = "label16";
-            label16.Size = new Size(180, 33);
-            label16.TabIndex = 75;
-            label16.Text = "Booking Form";
-            // 
             // BookingForm
             // 
             AutoScaleDimensions = new SizeF(15F, 29F);
@@ -509,8 +509,8 @@
             BackColor = Color.Azure;
             ClientSize = new Size(1753, 792);
             Controls.Add(dataBookForm);
-            Controls.Add(textBox4);
-            Controls.Add(textBox5);
+            Controls.Add(txtDestinationTrip);
+            Controls.Add(txtSourceTrip);
             Controls.Add(label13);
             Controls.Add(label14);
             Controls.Add(button4);
@@ -553,8 +553,8 @@
         #endregion
         private Panel panel5;
         private DataGridView dataBookForm;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtDestinationTrip;
+        private TextBox txtSourceTrip;
         private Label label13;
         private Label label14;
         private Button button4;

@@ -184,6 +184,7 @@
             Name = "LogIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";
+           
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();

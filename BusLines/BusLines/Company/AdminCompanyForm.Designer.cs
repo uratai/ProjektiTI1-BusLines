@@ -136,6 +136,7 @@
             btnDelete.TabIndex = 63;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click_1;
             // 
             // dataAddCompany
             // 
@@ -161,6 +162,7 @@
             btnUpdate.TabIndex = 61;
             btnUpdate.Text = "Edit";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click_1;
             // 
             // cbStatus
             // 
@@ -238,6 +240,7 @@
             btnAdd.TabIndex = 54;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click_1;
             // 
             // txtTotalSeats
             // 

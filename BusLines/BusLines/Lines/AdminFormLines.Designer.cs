@@ -50,7 +50,7 @@
             pictureBox9 = new PictureBox();
             label6 = new Label();
             pictureBox10 = new PictureBox();
-            label7 = new Label();
+            lblLines = new Label();
             label9 = new Label();
             pictureBox11 = new PictureBox();
             panel4 = new Panel();
@@ -233,7 +233,7 @@
             dataAddLines.RowTemplate.Height = 33;
             dataAddLines.Size = new Size(526, 317);
             dataAddLines.TabIndex = 39;
-            dataAddLines.CellContentClick += dataAddLines_CellContentClick;
+            
             // 
             // cmbCompanyID
             // 
@@ -274,7 +274,7 @@
             panel3.Controls.Add(pictureBox9);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(label7);
+            panel3.Controls.Add(lblLines);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(pictureBox11);
             panel3.Controls.Add(panel4);
@@ -343,18 +343,19 @@
             pictureBox10.TabIndex = 11;
             pictureBox10.TabStop = false;
             // 
-            // label7
+            // lblLines
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.DarkCyan;
-            label7.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(93, 305);
-            label7.Margin = new Padding(0);
-            label7.Name = "label7";
-            label7.Size = new Size(80, 32);
-            label7.TabIndex = 12;
-            label7.Text = "Lines";
+            lblLines.AutoSize = true;
+            lblLines.BackColor = Color.DarkCyan;
+            lblLines.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLines.ForeColor = Color.White;
+            lblLines.Location = new Point(93, 305);
+            lblLines.Margin = new Padding(0);
+            lblLines.Name = "lblLines";
+            lblLines.Size = new Size(80, 32);
+            lblLines.TabIndex = 12;
+            lblLines.Text = "Lines";
+            lblLines.Click += lblLines_Click;
             // 
             // label9
             // 
@@ -667,7 +668,7 @@
         private PictureBox pictureBox9;
         private Label label6;
         private PictureBox pictureBox10;
-        private Label label7;
+        private Label lblLines;
         private Label label9;
         private PictureBox pictureBox11;
         private Panel panel4;

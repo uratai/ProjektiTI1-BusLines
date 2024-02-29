@@ -12,13 +12,14 @@ namespace MenagjimiAutobusav.DAL
 
 		public static string GetConnectionString()
 		{
+
 			var path = @"C:\Users\HP\Desktop\Semestri-IV\SadikuIdriziHyseni\BusLines\BusLines.DAL\AppSettings.json";
 
 			try
 			{
 				var file = File.ReadAllText(path);
 				var jObject = JObject.Parse(file);
-				var connectionString = (string)jObject["ConnectionStrings"]["Urata"];
+				var connectionString = (string)jObject["ConnectionStrings"]["Fatbardha"];
 				return connectionString;
 			}
 			catch (Exception ex)

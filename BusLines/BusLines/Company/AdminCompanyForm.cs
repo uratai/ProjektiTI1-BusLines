@@ -28,7 +28,11 @@ namespace BusLines.Company
         }
 
 
-        private void btnAdd_Click(object sender, EventArgs e)
+
+
+
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
             string companyName = txtCompanyName.Text;
             string companyNumber = txtCompanyNumber.Text;
@@ -47,10 +51,10 @@ namespace BusLines.Company
             {
                 MessageBox.Show("Error adding company: " + ex.Message);
             }
+
         }
 
-
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
         {
             if (dataAddCompany.SelectedRows.Count > 0)
             {
@@ -80,11 +84,10 @@ namespace BusLines.Company
             {
                 MessageBox.Show("Please select a company to update.");
             }
+
         }
 
-
-
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click_1(object sender, EventArgs e)
         {
             if (dataAddCompany.SelectedCells.Count > 0)
             {
@@ -108,6 +111,7 @@ namespace BusLines.Company
             {
                 MessageBox.Show("Please select a company to delete.");
             }
+
         }
     }
 }
