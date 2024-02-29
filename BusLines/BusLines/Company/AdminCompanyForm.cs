@@ -1,4 +1,8 @@
-﻿using BusLines.DAL;
+﻿using BusLines.Authentication;
+using BusLines.Bookings;
+using BusLines.DAL;
+using BusLines.Feedback;
+using BusLines.Lines;
 using MenagjimiAutobusav.DAL;
 using System;
 using System.Collections.Generic;
@@ -26,11 +30,6 @@ namespace BusLines.Company
             DataTable company = CompanyDAL.ReadCompany();
             dataAddCompany.DataSource = company;
         }
-
-
-
-
-
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
@@ -111,6 +110,37 @@ namespace BusLines.Company
             {
                 MessageBox.Show("Please select a company to delete.");
             }
+
+        }
+
+        private void lblLinesCom_Click(object sender, EventArgs e)
+        {
+           AdminFormLines adminFormLines = new AdminFormLines();
+            adminFormLines.Show();
+            this.Hide();
+
+
+        }
+
+        private void lblBookingCom_Click(object sender, EventArgs e)
+        {
+            AdminBookForm form = new AdminBookForm();
+            form.Show();
+            this.Hide();
+
+        }
+
+        private void lblFeedbackCom_Click(object sender, EventArgs e)
+        {
+            FeedbackAdminForm form = new FeedbackAdminForm();
+            form.Show();
+            this.Hide();
+        }
+
+        private void lblLOgoutCom_Click(object sender, EventArgs e)
+        { 
+            LogIn logIn = new LogIn();
+            logIn.Close();
 
         }
     }

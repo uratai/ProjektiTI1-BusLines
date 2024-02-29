@@ -19,6 +19,18 @@ namespace BusLines.Authentication
             InitializeComponent();
         }
 
+        private void lblBackLogIn_Click(object sender, EventArgs e)
+        {
+
+            LogIn logIn = new LogIn();
+            logIn.Show();
+
+        }
+
+        private void lblCloseR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
 
         private void btnRegister_Click_1(object sender, EventArgs e)
@@ -54,6 +66,7 @@ namespace BusLines.Authentication
             }
         }
 
+       
     }
 }
 

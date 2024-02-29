@@ -1,5 +1,8 @@
 ﻿using BusLines.Authentication;
+using BusLines.Bookings;
+using BusLines.Company;
 using BusLines.DAL;
+using BusLines.Feedback;
 using MenagjimiAutobusav.DAL;
 using System;
 using System.Collections.Generic;
@@ -22,13 +25,6 @@ namespace BusLines.Lines
 
         }
 
-        private void lblLines_Click(object sender, EventArgs e)
-        {
-            
-            AdminFormLines lines = new AdminFormLines();
-            lines.Show();
-
-        }
 
         public void UpdateDataGridView()
         {
@@ -124,6 +120,7 @@ namespace BusLines.Lines
         }
         private void AdminFormLines_Load(object sender, EventArgs e)
         {
+
             try
             {
                 // Fetch company data from your data source
@@ -158,11 +155,43 @@ namespace BusLines.Lines
             {
                 MessageBox.Show("Error loading companies: " + ex.Message);
             }
+
+
         }
 
        
 
-      
+        private void lblCompany_Click(object sender, EventArgs e)
+        {
+            AdminCompanyForm adminCompanyForm = new AdminCompanyForm();
+            adminCompanyForm.Show();
+            this.Hide();
+            
+
+        }
+
+        private void lblBookings_Click(object sender, EventArgs e)
+        {
+            AdminBookForm adminBookForm = new AdminBookForm();
+            adminBookForm.Show();
+            this.Hide();
+        }
+
+        private void lblFeedback_Click(object sender, EventArgs e)
+        {
+            FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
+            feedbackAdminForm.Show();
+            this.Hide();
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Hide();
+            
+
+        }
     }
 }
 

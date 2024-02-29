@@ -38,7 +38,7 @@
             lblUsername = new Label();
             pictureBox6 = new PictureBox();
             label5 = new Label();
-            label4 = new Label();
+            lblCloseL = new Label();
             lblRegister = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
@@ -138,17 +138,18 @@
             label5.TabIndex = 25;
             label5.Text = "Reset";
             // 
-            // label4
+            // lblCloseL
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Crimson;
-            label4.Location = new Point(516, -1);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(44, 44);
-            label4.TabIndex = 24;
-            label4.Text = "X";
+            lblCloseL.AutoSize = true;
+            lblCloseL.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCloseL.ForeColor = Color.Crimson;
+            lblCloseL.Location = new Point(516, -1);
+            lblCloseL.Margin = new Padding(4, 0, 4, 0);
+            lblCloseL.Name = "lblCloseL";
+            lblCloseL.Size = new Size(44, 44);
+            lblCloseL.TabIndex = 24;
+            lblCloseL.Text = "X";
+            lblCloseL.Click += lblCloseL_Click;
             // 
             // lblRegister
             // 
@@ -177,14 +178,13 @@
             Controls.Add(lblUsername);
             Controls.Add(pictureBox6);
             Controls.Add(label5);
-            Controls.Add(label4);
+            Controls.Add(lblCloseL);
             Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6, 5, 6, 5);
             Name = "LogIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";
-           
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -201,7 +201,7 @@
         private Label lblUsername;
         private PictureBox pictureBox6;
         private Label label5;
-        private Label label4;
+        private Label lblCloseL;
         private Label lblRegister;
     }
 }

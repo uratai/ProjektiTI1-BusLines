@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             pictureBox6 = new PictureBox();
-            label1 = new Label();
+            lblBackLogIn = new Label();
             txtEmail = new TextBox();
             label3 = new Label();
             btnRegister = new Button();
@@ -40,7 +40,7 @@
             lblUserType = new Label();
             label2 = new Label();
             label5 = new Label();
-            label4 = new Label();
+            lblCloseR = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
@@ -54,18 +54,19 @@
             pictureBox6.TabIndex = 44;
             pictureBox6.TabStop = false;
             // 
-            // label1
+            // lblBackLogIn
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.Font = new Font("Verdana", 11F, FontStyle.Underline, GraphicsUnit.Point);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(154, 664);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(210, 26);
-            label1.TabIndex = 43;
-            label1.Text = "Go back to Log In";
+            lblBackLogIn.AutoSize = true;
+            lblBackLogIn.BackColor = Color.White;
+            lblBackLogIn.Font = new Font("Verdana", 11F, FontStyle.Underline, GraphicsUnit.Point);
+            lblBackLogIn.ForeColor = Color.Red;
+            lblBackLogIn.Location = new Point(154, 664);
+            lblBackLogIn.Margin = new Padding(2, 0, 2, 0);
+            lblBackLogIn.Name = "lblBackLogIn";
+            lblBackLogIn.Size = new Size(210, 26);
+            lblBackLogIn.TabIndex = 43;
+            lblBackLogIn.Text = "Go back to Log In";
+            lblBackLogIn.Click += lblBackLogIn_Click;
             // 
             // txtEmail
             // 
@@ -162,17 +163,18 @@
             label5.TabIndex = 34;
             label5.Text = "Username";
             // 
-            // label4
+            // lblCloseR
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Crimson;
-            label4.Location = new Point(516, -1);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(44, 44);
-            label4.TabIndex = 45;
-            label4.Text = "X";
+            lblCloseR.AutoSize = true;
+            lblCloseR.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCloseR.ForeColor = Color.Crimson;
+            lblCloseR.Location = new Point(516, -1);
+            lblCloseR.Margin = new Padding(4, 0, 4, 0);
+            lblCloseR.Name = "lblCloseR";
+            lblCloseR.Size = new Size(44, 44);
+            lblCloseR.TabIndex = 45;
+            lblCloseR.Text = "X";
+            lblCloseR.Click += lblCloseR_Click;
             // 
             // Register
             // 
@@ -180,9 +182,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(560, 716);
-            Controls.Add(label4);
+            Controls.Add(lblCloseR);
             Controls.Add(pictureBox6);
-            Controls.Add(label1);
+            Controls.Add(lblBackLogIn);
             Controls.Add(txtEmail);
             Controls.Add(label3);
             Controls.Add(btnRegister);
@@ -206,7 +208,7 @@
         #endregion
 
         private PictureBox pictureBox6;
-        private Label label1;
+        private Label lblBackLogIn;
         private TextBox txtEmail;
         private Label label3;
         private Button btnRegister;
@@ -216,6 +218,6 @@
         private Label lblUserType;
         private Label label2;
         private Label label5;
-        private Label label4;
+        private Label lblCloseR;
     }
 }

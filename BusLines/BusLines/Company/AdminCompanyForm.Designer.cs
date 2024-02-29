@@ -49,15 +49,15 @@
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
-            label2 = new Label();
+            lblFeedbackCom = new Label();
             pictureBox10 = new PictureBox();
-            label3 = new Label();
-            label9 = new Label();
+            lblLinesCom = new Label();
+            lblBookingCom = new Label();
             pictureBox11 = new PictureBox();
             panel4 = new Panel();
-            label10 = new Label();
+            lblLOgoutCom = new Label();
             pictureBox12 = new PictureBox();
-            label11 = new Label();
+            lblCompanyCom = new Label();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -287,13 +287,13 @@
             panel3.Controls.Add(pictureBox7);
             panel3.Controls.Add(pictureBox8);
             panel3.Controls.Add(pictureBox9);
-            panel3.Controls.Add(label2);
+            panel3.Controls.Add(lblFeedbackCom);
             panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label9);
+            panel3.Controls.Add(lblLinesCom);
+            panel3.Controls.Add(lblBookingCom);
             panel3.Controls.Add(pictureBox11);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(label11);
+            panel3.Controls.Add(lblCompanyCom);
             panel3.Dock = DockStyle.Left;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
@@ -334,18 +334,19 @@
             pictureBox9.TabIndex = 13;
             pictureBox9.TabStop = false;
             // 
-            // label2
+            // lblFeedbackCom
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.DarkCyan;
-            label2.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(92, 603);
-            label2.Margin = new Padding(0);
-            label2.Name = "label2";
-            label2.Size = new Size(135, 32);
-            label2.TabIndex = 8;
-            label2.Text = "Feedback";
+            lblFeedbackCom.AutoSize = true;
+            lblFeedbackCom.BackColor = Color.DarkCyan;
+            lblFeedbackCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFeedbackCom.ForeColor = Color.White;
+            lblFeedbackCom.Location = new Point(92, 603);
+            lblFeedbackCom.Margin = new Padding(0);
+            lblFeedbackCom.Name = "lblFeedbackCom";
+            lblFeedbackCom.Size = new Size(135, 32);
+            lblFeedbackCom.TabIndex = 8;
+            lblFeedbackCom.Text = "Feedback";
+            lblFeedbackCom.Click += lblFeedbackCom_Click;
             // 
             // pictureBox10
             // 
@@ -358,31 +359,33 @@
             pictureBox10.TabIndex = 11;
             pictureBox10.TabStop = false;
             // 
-            // label3
+            // lblLinesCom
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.DarkCyan;
-            label3.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(93, 305);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 32);
-            label3.TabIndex = 12;
-            label3.Text = "Lines";
+            lblLinesCom.AutoSize = true;
+            lblLinesCom.BackColor = Color.DarkCyan;
+            lblLinesCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLinesCom.ForeColor = Color.White;
+            lblLinesCom.Location = new Point(93, 305);
+            lblLinesCom.Margin = new Padding(0);
+            lblLinesCom.Name = "lblLinesCom";
+            lblLinesCom.Size = new Size(80, 32);
+            lblLinesCom.TabIndex = 12;
+            lblLinesCom.Text = "Lines";
+            lblLinesCom.Click += lblLinesCom_Click;
             // 
-            // label9
+            // lblBookingCom
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.DarkCyan;
-            label9.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(92, 503);
-            label9.Margin = new Padding(0);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 32);
-            label9.TabIndex = 10;
-            label9.Text = "Bookings";
+            lblBookingCom.AutoSize = true;
+            lblBookingCom.BackColor = Color.DarkCyan;
+            lblBookingCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBookingCom.ForeColor = Color.White;
+            lblBookingCom.Location = new Point(92, 503);
+            lblBookingCom.Margin = new Padding(0);
+            lblBookingCom.Name = "lblBookingCom";
+            lblBookingCom.Size = new Size(132, 32);
+            lblBookingCom.TabIndex = 10;
+            lblBookingCom.Text = "Bookings";
+            lblBookingCom.Click += lblBookingCom_Click;
             // 
             // pictureBox11
             // 
@@ -398,24 +401,25 @@
             // panel4
             // 
             panel4.BackColor = Color.MediumTurquoise;
-            panel4.Controls.Add(label10);
+            panel4.Controls.Add(lblLOgoutCom);
             panel4.Controls.Add(pictureBox12);
             panel4.Location = new Point(3, 723);
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 75);
             panel4.TabIndex = 2;
             // 
-            // label10
+            // lblLOgoutCom
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(104, 21);
-            label10.Margin = new Padding(0);
-            label10.Name = "label10";
-            label10.Size = new Size(102, 32);
-            label10.TabIndex = 15;
-            label10.Text = "Logout";
+            lblLOgoutCom.AutoSize = true;
+            lblLOgoutCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLOgoutCom.ForeColor = Color.White;
+            lblLOgoutCom.Location = new Point(104, 21);
+            lblLOgoutCom.Margin = new Padding(0);
+            lblLOgoutCom.Name = "lblLOgoutCom";
+            lblLOgoutCom.Size = new Size(102, 32);
+            lblLOgoutCom.TabIndex = 15;
+            lblLOgoutCom.Text = "Logout";
+            lblLOgoutCom.Click += lblLOgoutCom_Click;
             // 
             // pictureBox12
             // 
@@ -428,18 +432,18 @@
             pictureBox12.TabIndex = 7;
             pictureBox12.TabStop = false;
             // 
-            // label11
+            // lblCompanyCom
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.DarkCyan;
-            label11.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(92, 405);
-            label11.Margin = new Padding(0);
-            label11.Name = "label11";
-            label11.Size = new Size(136, 32);
-            label11.TabIndex = 8;
-            label11.Text = "Company";
+            lblCompanyCom.AutoSize = true;
+            lblCompanyCom.BackColor = Color.DarkCyan;
+            lblCompanyCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyCom.ForeColor = Color.White;
+            lblCompanyCom.Location = new Point(92, 405);
+            lblCompanyCom.Margin = new Padding(0);
+            lblCompanyCom.Name = "lblCompanyCom";
+            lblCompanyCom.Size = new Size(136, 32);
+            lblCompanyCom.TabIndex = 8;
+            lblCompanyCom.Text = "Company";
             // 
             // pictureBox6
             // 
@@ -678,15 +682,15 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
-        private Label label2;
+        private Label lblFeedbackCom;
         private PictureBox pictureBox10;
-        private Label label3;
-        private Label label9;
+        private Label lblLinesCom;
+        private Label lblBookingCom;
         private PictureBox pictureBox11;
         private Panel panel4;
-        private Label label10;
+        private Label lblLOgoutCom;
         private PictureBox pictureBox12;
-        private Label label11;
+        private Label lblCompanyCom;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;

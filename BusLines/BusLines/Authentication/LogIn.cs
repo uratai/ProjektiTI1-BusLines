@@ -30,6 +30,11 @@ namespace BusLines.Authentication
             registeruser.Show();
         }
 
+        private void lblCloseL_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string enteredUsername = txtUserName.Text;
@@ -85,6 +90,11 @@ namespace BusLines.Authentication
                     }
                 }
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
 
       

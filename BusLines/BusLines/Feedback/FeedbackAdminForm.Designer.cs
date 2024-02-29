@@ -37,13 +37,13 @@
             pictureBox9 = new PictureBox();
             label2 = new Label();
             pictureBox10 = new PictureBox();
-            label3 = new Label();
-            label9 = new Label();
+            lblLinesUser = new Label();
+            lblBookingUser = new Label();
             pictureBox11 = new PictureBox();
             panel4 = new Panel();
-            label10 = new Label();
+            lblLogoutForm = new Label();
             pictureBox12 = new PictureBox();
-            label11 = new Label();
+            lblCompanyUser = new Label();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -57,8 +57,8 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             panel5 = new Panel();
-            label1 = new Label();
             label16 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataFeedbackUser).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -121,11 +121,11 @@
             panel3.Controls.Add(pictureBox9);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label9);
+            panel3.Controls.Add(lblLinesUser);
+            panel3.Controls.Add(lblBookingUser);
             panel3.Controls.Add(pictureBox11);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(label11);
+            panel3.Controls.Add(lblCompanyUser);
             panel3.Dock = DockStyle.Left;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
@@ -190,31 +190,31 @@
             pictureBox10.TabIndex = 11;
             pictureBox10.TabStop = false;
             // 
-            // label3
+            // lblLinesUser
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.DarkCyan;
-            label3.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(93, 305);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 32);
-            label3.TabIndex = 12;
-            label3.Text = "Lines";
+            lblLinesUser.AutoSize = true;
+            lblLinesUser.BackColor = Color.DarkCyan;
+            lblLinesUser.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLinesUser.ForeColor = Color.White;
+            lblLinesUser.Location = new Point(93, 305);
+            lblLinesUser.Margin = new Padding(0);
+            lblLinesUser.Name = "lblLinesUser";
+            lblLinesUser.Size = new Size(80, 32);
+            lblLinesUser.TabIndex = 12;
+            lblLinesUser.Text = "Lines";
             // 
-            // label9
+            // lblBookingUser
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.DarkCyan;
-            label9.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(92, 503);
-            label9.Margin = new Padding(0);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 32);
-            label9.TabIndex = 10;
-            label9.Text = "Bookings";
+            lblBookingUser.AutoSize = true;
+            lblBookingUser.BackColor = Color.DarkCyan;
+            lblBookingUser.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBookingUser.ForeColor = Color.White;
+            lblBookingUser.Location = new Point(92, 503);
+            lblBookingUser.Margin = new Padding(0);
+            lblBookingUser.Name = "lblBookingUser";
+            lblBookingUser.Size = new Size(132, 32);
+            lblBookingUser.TabIndex = 10;
+            lblBookingUser.Text = "Bookings";
             // 
             // pictureBox11
             // 
@@ -230,24 +230,24 @@
             // panel4
             // 
             panel4.BackColor = Color.MediumTurquoise;
-            panel4.Controls.Add(label10);
+            panel4.Controls.Add(lblLogoutForm);
             panel4.Controls.Add(pictureBox12);
             panel4.Location = new Point(3, 723);
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 75);
             panel4.TabIndex = 2;
             // 
-            // label10
+            // lblLogoutForm
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(104, 21);
-            label10.Margin = new Padding(0);
-            label10.Name = "label10";
-            label10.Size = new Size(102, 32);
-            label10.TabIndex = 15;
-            label10.Text = "Logout";
+            lblLogoutForm.AutoSize = true;
+            lblLogoutForm.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLogoutForm.ForeColor = Color.White;
+            lblLogoutForm.Location = new Point(104, 21);
+            lblLogoutForm.Margin = new Padding(0);
+            lblLogoutForm.Name = "lblLogoutForm";
+            lblLogoutForm.Size = new Size(102, 32);
+            lblLogoutForm.TabIndex = 15;
+            lblLogoutForm.Text = "Logout";
             // 
             // pictureBox12
             // 
@@ -260,18 +260,18 @@
             pictureBox12.TabIndex = 7;
             pictureBox12.TabStop = false;
             // 
-            // label11
+            // lblCompanyUser
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.DarkCyan;
-            label11.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(92, 405);
-            label11.Margin = new Padding(0);
-            label11.Name = "label11";
-            label11.Size = new Size(136, 32);
-            label11.TabIndex = 8;
-            label11.Text = "Company";
+            lblCompanyUser.AutoSize = true;
+            lblCompanyUser.BackColor = Color.DarkCyan;
+            lblCompanyUser.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyUser.ForeColor = Color.White;
+            lblCompanyUser.Location = new Point(92, 405);
+            lblCompanyUser.Margin = new Padding(0);
+            lblCompanyUser.Name = "lblCompanyUser";
+            lblCompanyUser.Size = new Size(136, 32);
+            lblCompanyUser.TabIndex = 8;
+            lblCompanyUser.Text = "Company";
             // 
             // pictureBox6
             // 
@@ -424,16 +424,6 @@
             panel5.Size = new Size(1450, 66);
             panel5.TabIndex = 68;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(497, 177);
-            label1.Name = "label1";
-            label1.Size = new Size(414, 34);
-            label1.TabIndex = 69;
-            label1.Text = "List of Passangers Feedback";
-            // 
             // label16
             // 
             label16.AutoSize = true;
@@ -444,6 +434,16 @@
             label16.Size = new Size(221, 33);
             label16.TabIndex = 72;
             label16.Text = "User's Feedbacks";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(497, 177);
+            label1.Name = "label1";
+            label1.Size = new Size(414, 34);
+            label1.TabIndex = 69;
+            label1.Text = "List of Passangers Feedback";
             // 
             // FeedbackAdminForm
             // 
@@ -497,13 +497,13 @@
         private PictureBox pictureBox9;
         private Label label2;
         private PictureBox pictureBox10;
-        private Label label3;
-        private Label label9;
+        private Label lblLinesUser;
+        private Label lblBookingUser;
         private PictureBox pictureBox11;
         private Panel panel4;
-        private Label label10;
+        private Label lblLogoutForm;
         private PictureBox pictureBox12;
-        private Label label11;
+        private Label lblCompanyUser;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;

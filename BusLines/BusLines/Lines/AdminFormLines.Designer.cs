@@ -29,34 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminFormLines));
-            label4 = new Label();
-            label3 = new Label();
-            txtDepartureCity = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            ttArrivalCity = new TextBox();
-            dtDeprartureTime = new DateTimePicker();
-            dtArrivalTime = new DateTimePicker();
-            label5 = new Label();
-            btnAdd = new Button();
-            btnDelete = new Button();
-            btnUpdate = new Button();
-            dataAddLines = new DataGridView();
-            cmbCompanyID = new ComboBox();
             panel1 = new Panel();
-            panel3 = new Panel();
+            pnlpanel = new Panel();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
-            label6 = new Label();
+            lblFeedback = new Label();
             pictureBox10 = new PictureBox();
             lblLines = new Label();
-            label9 = new Label();
+            lblBookings = new Label();
             pictureBox11 = new PictureBox();
             panel4 = new Panel();
-            label10 = new Label();
+            lblLogOut = new Label();
             pictureBox12 = new PictureBox();
-            label11 = new Label();
+            lblCompany = new Label();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -71,9 +57,23 @@
             label15 = new Label();
             panel5 = new Panel();
             label16 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataAddLines).BeginInit();
+            Mainpanel = new Panel();
+            cmbCompanyID = new ComboBox();
+            dataAddLines = new DataGridView();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btnAdd = new Button();
+            label5 = new Label();
+            dtArrivalTime = new DateTimePicker();
+            dtDeprartureTime = new DateTimePicker();
+            label4 = new Label();
+            label3 = new Label();
+            txtDepartureCity = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            ttArrivalCity = new TextBox();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
+            pnlpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -89,166 +89,14 @@
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
+            Mainpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataAddLines).BeginInit();
             SuspendLayout();
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(447, 448);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(166, 29);
-            label4.TabIndex = 29;
-            label4.Text = "Arrival Time:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(447, 250);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(198, 29);
-            label3.TabIndex = 28;
-            label3.Text = "Departure City:";
-            // 
-            // txtDepartureCity
-            // 
-            txtDepartureCity.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDepartureCity.Location = new Point(719, 250);
-            txtDepartureCity.Margin = new Padding(2);
-            txtDepartureCity.Name = "txtDepartureCity";
-            txtDepartureCity.Size = new Size(288, 37);
-            txtDepartureCity.TabIndex = 27;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(447, 390);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(210, 29);
-            label2.TabIndex = 26;
-            label2.Text = "Departure Time:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(447, 320);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(154, 29);
-            label1.TabIndex = 25;
-            label1.Text = "Arrival City:";
-            // 
-            // ttArrivalCity
-            // 
-            ttArrivalCity.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            ttArrivalCity.Location = new Point(719, 310);
-            ttArrivalCity.Margin = new Padding(2);
-            ttArrivalCity.Name = "ttArrivalCity";
-            ttArrivalCity.Size = new Size(288, 37);
-            ttArrivalCity.TabIndex = 23;
-            // 
-            // dtDeprartureTime
-            // 
-            dtDeprartureTime.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtDeprartureTime.Location = new Point(719, 382);
-            dtDeprartureTime.Margin = new Padding(4);
-            dtDeprartureTime.Name = "dtDeprartureTime";
-            dtDeprartureTime.Size = new Size(288, 37);
-            dtDeprartureTime.TabIndex = 32;
-            // 
-            // dtArrivalTime
-            // 
-            dtArrivalTime.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtArrivalTime.Location = new Point(719, 448);
-            dtArrivalTime.Margin = new Padding(4);
-            dtArrivalTime.Name = "dtArrivalTime";
-            dtArrivalTime.Size = new Size(288, 37);
-            dtArrivalTime.TabIndex = 33;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(447, 183);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(174, 29);
-            label5.TabIndex = 35;
-            label5.Text = "Company ID:";
-            // 
-            // btnAdd
-            // 
-            btnAdd.BackColor = Color.Teal;
-            btnAdd.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAdd.Location = new Point(719, 543);
-            btnAdd.Margin = new Padding(4);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(124, 84);
-            btnAdd.TabIndex = 36;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = false;
-            btnAdd.Click += btnAdd_Click;
-            // 
-            // btnDelete
-            // 
-            btnDelete.BackColor = Color.Teal;
-            btnDelete.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(791, 641);
-            btnDelete.Margin = new Padding(4);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(124, 84);
-            btnDelete.TabIndex = 37;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
-            // 
-            // btnUpdate
-            // 
-            btnUpdate.BackColor = Color.Teal;
-            btnUpdate.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(883, 543);
-            btnUpdate.Margin = new Padding(4);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(124, 84);
-            btnUpdate.TabIndex = 38;
-            btnUpdate.Text = "Edit";
-            btnUpdate.UseVisualStyleBackColor = false;
-            btnUpdate.Click += btnUpdate_Click;
-            // 
-            // dataAddLines
-            // 
-            dataAddLines.BackgroundColor = Color.Lavender;
-            dataAddLines.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataAddLines.GridColor = SystemColors.ButtonHighlight;
-            dataAddLines.Location = new Point(1103, 183);
-            dataAddLines.Margin = new Padding(2);
-            dataAddLines.Name = "dataAddLines";
-            dataAddLines.RowHeadersWidth = 62;
-            dataAddLines.RowTemplate.Height = 33;
-            dataAddLines.Size = new Size(526, 317);
-            dataAddLines.TabIndex = 39;
-            
-            // 
-            // cmbCompanyID
-            // 
-            cmbCompanyID.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            cmbCompanyID.FormattingEnabled = true;
-            cmbCompanyID.Location = new Point(719, 183);
-            cmbCompanyID.Margin = new Padding(4);
-            cmbCompanyID.Name = "cmbCompanyID";
-            cmbCompanyID.Size = new Size(288, 37);
-            cmbCompanyID.TabIndex = 40;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(pnlpanel);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox4);
@@ -266,25 +114,25 @@
             panel1.Size = new Size(303, 798);
             panel1.TabIndex = 68;
             // 
-            // panel3
+            // pnlpanel
             // 
-            panel3.BackColor = Color.Teal;
-            panel3.Controls.Add(pictureBox7);
-            panel3.Controls.Add(pictureBox8);
-            panel3.Controls.Add(pictureBox9);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(lblLines);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(pictureBox11);
-            panel3.Controls.Add(panel4);
-            panel3.Controls.Add(label11);
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(303, 798);
-            panel3.TabIndex = 15;
+            pnlpanel.BackColor = Color.Teal;
+            pnlpanel.Controls.Add(pictureBox7);
+            pnlpanel.Controls.Add(pictureBox8);
+            pnlpanel.Controls.Add(pictureBox9);
+            pnlpanel.Controls.Add(lblFeedback);
+            pnlpanel.Controls.Add(pictureBox10);
+            pnlpanel.Controls.Add(lblLines);
+            pnlpanel.Controls.Add(lblBookings);
+            pnlpanel.Controls.Add(pictureBox11);
+            pnlpanel.Controls.Add(panel4);
+            pnlpanel.Controls.Add(lblCompany);
+            pnlpanel.Dock = DockStyle.Left;
+            pnlpanel.Location = new Point(0, 0);
+            pnlpanel.Margin = new Padding(0);
+            pnlpanel.Name = "pnlpanel";
+            pnlpanel.Size = new Size(303, 798);
+            pnlpanel.TabIndex = 15;
             // 
             // pictureBox7
             // 
@@ -319,18 +167,19 @@
             pictureBox9.TabIndex = 13;
             pictureBox9.TabStop = false;
             // 
-            // label6
+            // lblFeedback
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.DarkCyan;
-            label6.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(92, 603);
-            label6.Margin = new Padding(0);
-            label6.Name = "label6";
-            label6.Size = new Size(135, 32);
-            label6.TabIndex = 8;
-            label6.Text = "Feedback";
+            lblFeedback.AutoSize = true;
+            lblFeedback.BackColor = Color.DarkCyan;
+            lblFeedback.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFeedback.ForeColor = Color.White;
+            lblFeedback.Location = new Point(92, 603);
+            lblFeedback.Margin = new Padding(0);
+            lblFeedback.Name = "lblFeedback";
+            lblFeedback.Size = new Size(135, 32);
+            lblFeedback.TabIndex = 8;
+            lblFeedback.Text = "Feedback";
+            lblFeedback.Click += lblFeedback_Click;
             // 
             // pictureBox10
             // 
@@ -355,20 +204,21 @@
             lblLines.Size = new Size(80, 32);
             lblLines.TabIndex = 12;
             lblLines.Text = "Lines";
-            lblLines.Click += lblLines_Click;
+            
             // 
-            // label9
+            // lblBookings
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.DarkCyan;
-            label9.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(92, 503);
-            label9.Margin = new Padding(0);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 32);
-            label9.TabIndex = 10;
-            label9.Text = "Bookings";
+            lblBookings.AutoSize = true;
+            lblBookings.BackColor = Color.DarkCyan;
+            lblBookings.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBookings.ForeColor = Color.White;
+            lblBookings.Location = new Point(92, 503);
+            lblBookings.Margin = new Padding(0);
+            lblBookings.Name = "lblBookings";
+            lblBookings.Size = new Size(132, 32);
+            lblBookings.TabIndex = 10;
+            lblBookings.Text = "Bookings";
+            lblBookings.Click += lblBookings_Click;
             // 
             // pictureBox11
             // 
@@ -384,24 +234,25 @@
             // panel4
             // 
             panel4.BackColor = Color.MediumTurquoise;
-            panel4.Controls.Add(label10);
+            panel4.Controls.Add(lblLogOut);
             panel4.Controls.Add(pictureBox12);
             panel4.Location = new Point(3, 723);
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 75);
             panel4.TabIndex = 2;
             // 
-            // label10
+            // lblLogOut
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(104, 21);
-            label10.Margin = new Padding(0);
-            label10.Name = "label10";
-            label10.Size = new Size(102, 32);
-            label10.TabIndex = 15;
-            label10.Text = "Logout";
+            lblLogOut.AutoSize = true;
+            lblLogOut.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLogOut.ForeColor = Color.White;
+            lblLogOut.Location = new Point(104, 21);
+            lblLogOut.Margin = new Padding(0);
+            lblLogOut.Name = "lblLogOut";
+            lblLogOut.Size = new Size(102, 32);
+            lblLogOut.TabIndex = 15;
+            lblLogOut.Text = "Logout";
+            lblLogOut.Click += lblLogOut_Click;
             // 
             // pictureBox12
             // 
@@ -414,18 +265,19 @@
             pictureBox12.TabIndex = 7;
             pictureBox12.TabStop = false;
             // 
-            // label11
+            // lblCompany
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.DarkCyan;
-            label11.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(92, 405);
-            label11.Margin = new Padding(0);
-            label11.Name = "label11";
-            label11.Size = new Size(136, 32);
-            label11.TabIndex = 8;
-            label11.Text = "Company";
+            lblCompany.AutoSize = true;
+            lblCompany.BackColor = Color.DarkCyan;
+            lblCompany.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompany.ForeColor = Color.White;
+            lblCompany.Location = new Point(92, 405);
+            lblCompany.Margin = new Padding(0);
+            lblCompany.Name = "lblCompany";
+            lblCompany.Size = new Size(136, 32);
+            lblCompany.TabIndex = 8;
+            lblCompany.Text = "Company";
+            lblCompany.Click += lblCompany_Click;
             // 
             // pictureBox6
             // 
@@ -589,39 +441,197 @@
             label16.TabIndex = 71;
             label16.Text = "Admin- Lines Form";
             // 
+            // Mainpanel
+            // 
+            Mainpanel.Controls.Add(cmbCompanyID);
+            Mainpanel.Controls.Add(dataAddLines);
+            Mainpanel.Controls.Add(btnUpdate);
+            Mainpanel.Controls.Add(btnDelete);
+            Mainpanel.Controls.Add(btnAdd);
+            Mainpanel.Controls.Add(label5);
+            Mainpanel.Controls.Add(dtArrivalTime);
+            Mainpanel.Controls.Add(dtDeprartureTime);
+            Mainpanel.Controls.Add(label4);
+            Mainpanel.Controls.Add(label3);
+            Mainpanel.Controls.Add(txtDepartureCity);
+            Mainpanel.Controls.Add(label2);
+            Mainpanel.Controls.Add(label1);
+            Mainpanel.Controls.Add(ttArrivalCity);
+            Mainpanel.Dock = DockStyle.Fill;
+            Mainpanel.Location = new Point(303, 66);
+            Mainpanel.Name = "Mainpanel";
+            Mainpanel.Size = new Size(1428, 732);
+            Mainpanel.TabIndex = 71;
+            // 
+            // cmbCompanyID
+            // 
+            cmbCompanyID.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbCompanyID.FormattingEnabled = true;
+            cmbCompanyID.Location = new Point(377, 148);
+            cmbCompanyID.Margin = new Padding(4);
+            cmbCompanyID.Name = "cmbCompanyID";
+            cmbCompanyID.Size = new Size(288, 37);
+            cmbCompanyID.TabIndex = 54;
+            // 
+            // dataAddLines
+            // 
+            dataAddLines.BackgroundColor = Color.Lavender;
+            dataAddLines.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataAddLines.GridColor = SystemColors.ButtonHighlight;
+            dataAddLines.Location = new Point(761, 148);
+            dataAddLines.Margin = new Padding(2);
+            dataAddLines.Name = "dataAddLines";
+            dataAddLines.RowHeadersWidth = 62;
+            dataAddLines.RowTemplate.Height = 33;
+            dataAddLines.Size = new Size(526, 317);
+            dataAddLines.TabIndex = 53;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.Teal;
+            btnUpdate.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(541, 508);
+            btnUpdate.Margin = new Padding(4);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(124, 84);
+            btnUpdate.TabIndex = 52;
+            btnUpdate.Text = "Edit";
+            btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.Teal;
+            btnDelete.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.Location = new Point(449, 606);
+            btnDelete.Margin = new Padding(4);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(124, 84);
+            btnDelete.TabIndex = 51;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.Teal;
+            btnAdd.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAdd.Location = new Point(377, 508);
+            btnAdd.Margin = new Padding(4);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(124, 84);
+            btnAdd.TabIndex = 50;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(105, 148);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(174, 29);
+            label5.TabIndex = 49;
+            label5.Text = "Company ID:";
+            // 
+            // dtArrivalTime
+            // 
+            dtArrivalTime.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dtArrivalTime.Location = new Point(377, 413);
+            dtArrivalTime.Margin = new Padding(4);
+            dtArrivalTime.Name = "dtArrivalTime";
+            dtArrivalTime.Size = new Size(288, 37);
+            dtArrivalTime.TabIndex = 48;
+            // 
+            // dtDeprartureTime
+            // 
+            dtDeprartureTime.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dtDeprartureTime.Location = new Point(377, 347);
+            dtDeprartureTime.Margin = new Padding(4);
+            dtDeprartureTime.Name = "dtDeprartureTime";
+            dtDeprartureTime.Size = new Size(288, 37);
+            dtDeprartureTime.TabIndex = 47;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(105, 413);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(166, 29);
+            label4.TabIndex = 46;
+            label4.Text = "Arrival Time:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(105, 215);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(198, 29);
+            label3.TabIndex = 45;
+            label3.Text = "Departure City:";
+            // 
+            // txtDepartureCity
+            // 
+            txtDepartureCity.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDepartureCity.Location = new Point(377, 215);
+            txtDepartureCity.Margin = new Padding(2);
+            txtDepartureCity.Name = "txtDepartureCity";
+            txtDepartureCity.Size = new Size(288, 37);
+            txtDepartureCity.TabIndex = 44;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(105, 355);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(210, 29);
+            label2.TabIndex = 43;
+            label2.Text = "Departure Time:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(105, 285);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(154, 29);
+            label1.TabIndex = 42;
+            label1.Text = "Arrival City:";
+            // 
+            // ttArrivalCity
+            // 
+            ttArrivalCity.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ttArrivalCity.Location = new Point(377, 275);
+            ttArrivalCity.Margin = new Padding(2);
+            ttArrivalCity.Name = "ttArrivalCity";
+            ttArrivalCity.Size = new Size(288, 37);
+            ttArrivalCity.TabIndex = 41;
+            // 
             // AdminFormLines
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1731, 798);
+            Controls.Add(Mainpanel);
             Controls.Add(panel5);
             Controls.Add(panel1);
-            Controls.Add(cmbCompanyID);
-            Controls.Add(dataAddLines);
-            Controls.Add(btnUpdate);
-            Controls.Add(btnDelete);
-            Controls.Add(btnAdd);
-            Controls.Add(label5);
-            Controls.Add(dtArrivalTime);
-            Controls.Add(dtDeprartureTime);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(txtDepartureCity);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(ttArrivalCity);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "AdminFormLines";
             Text = "AdminFormLines";
             Load += AdminFormLines_Load;
-            ((System.ComponentModel.ISupportInitialize)dataAddLines).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            pnlpanel.ResumeLayout(false);
+            pnlpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -640,41 +650,29 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            Mainpanel.ResumeLayout(false);
+            Mainpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataAddLines).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private ComboBox cbStatus;
-        private Label label4;
-        private Label label3;
-        private TextBox txtDepartureCity;
-        private Label label2;
-        private Label label1;
-        private TextBox ttArrivalCity;
-        private DateTimePicker dtDeprartureTime;
-        private DateTimePicker dtArrivalTime;
-        private Label label5;
-        private Button btnAdd;
-        private Button btnDelete;
-        private Button btnUpdate;
-        private DataGridView dataAddLines;
-        private ComboBox cmbCompanyID;
         private Panel panel1;
-        private Panel panel3;
+        private Panel pnlpanel;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
-        private Label label6;
+        private Label lblFeedback;
         private PictureBox pictureBox10;
         private Label lblLines;
-        private Label label9;
+        private Label lblBookings;
         private PictureBox pictureBox11;
         private Panel panel4;
-        private Label label10;
+        private Label lblLogOut;
         private PictureBox pictureBox12;
-        private Label label11;
+        private Label lblCompany;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
@@ -689,5 +687,20 @@
         private Label label15;
         private Panel panel5;
         private Label label16;
+        private Panel Mainpanel;
+        private ComboBox cmbCompanyID;
+        private DataGridView dataAddLines;
+        private Button btnUpdate;
+        private Button btnDelete;
+        private Button btnAdd;
+        private Label label5;
+        private DateTimePicker dtArrivalTime;
+        private DateTimePicker dtDeprartureTime;
+        private Label label4;
+        private Label label3;
+        private TextBox txtDepartureCity;
+        private Label label2;
+        private Label label1;
+        private TextBox ttArrivalCity;
     }
 }
