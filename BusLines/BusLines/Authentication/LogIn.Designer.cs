@@ -34,16 +34,19 @@
             btnLogin = new Button();
             txtPassword = new TextBox();
             txtUserName = new TextBox();
-            lblPassword = new Label();
-            lblUsername = new Label();
             pictureBox6 = new PictureBox();
             label5 = new Label();
             lblCloseL = new Label();
             lblRegister = new Label();
             comboBox1 = new ComboBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            lblUserName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -53,15 +56,15 @@
             // 
             // cbRole
             // 
+            resources.ApplyResources(cbRole, "cbRole");
             cbRole.FormattingEnabled = true;
             cbRole.Items.AddRange(new object[] { resources.GetString("cbRole.Items"), resources.GetString("cbRole.Items1") });
-            resources.ApplyResources(cbRole, "cbRole");
             cbRole.Name = "cbRole";
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.Teal;
             resources.ApplyResources(btnLogin, "btnLogin");
+            btnLogin.BackColor = Color.Teal;
             btnLogin.ForeColor = Color.White;
             btnLogin.Name = "btnLogin";
             btnLogin.UseVisualStyleBackColor = false;
@@ -76,17 +79,6 @@
             // 
             resources.ApplyResources(txtUserName, "txtUserName");
             txtUserName.Name = "txtUserName";
-            // 
-            // lblPassword
-            // 
-            resources.ApplyResources(lblPassword, "lblPassword");
-            lblPassword.Name = "lblPassword";
-            // 
-            // lblUsername
-            // 
-            resources.ApplyResources(lblUsername, "lblUsername");
-            lblUsername.Name = "lblUsername";
-            
             // 
             // pictureBox6
             // 
@@ -115,10 +107,10 @@
             // 
             // comboBox1
             // 
+            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
-            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.Name = "comboBox1";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -128,11 +120,31 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(pictureBox2, "pictureBox2");
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(pictureBox3, "pictureBox3");
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.TabStop = false;
+            // 
+            // lblUserName
+            // 
+            resources.ApplyResources(lblUserName, "lblUserName");
+            lblUserName.Name = "lblUserName";
+            // 
             // LogIn
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
+            Controls.Add(lblUserName);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(comboBox1);
             Controls.Add(lblRegister);
@@ -141,8 +153,6 @@
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUserName);
-            Controls.Add(lblPassword);
-            Controls.Add(lblUsername);
             Controls.Add(pictureBox6);
             Controls.Add(label5);
             Controls.Add(lblCloseL);
@@ -151,6 +161,8 @@
             Load += LogIn_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -162,13 +174,14 @@
         private Button btnLogin;
         private TextBox txtPassword;
         private TextBox txtUserName;
-        private Label lblPassword;
-        private Label lblUsername;
         private PictureBox pictureBox6;
         private Label label5;
         private Label lblCloseL;
         private Label lblRegister;
         private ComboBox comboBox1;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private Label lblUserName;
     }
 }

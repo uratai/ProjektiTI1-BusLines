@@ -82,6 +82,11 @@ namespace BusLines.Authentication
             this.Controls.Clear();
             InitializeComponent();
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

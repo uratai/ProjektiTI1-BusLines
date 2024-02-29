@@ -73,8 +73,8 @@
             // 
             // btnRegister
             // 
-            resources.ApplyResources(btnRegister, "btnRegister");
             btnRegister.BackColor = Color.Teal;
+            resources.ApplyResources(btnRegister, "btnRegister");
             btnRegister.ForeColor = Color.White;
             btnRegister.Name = "btnRegister";
             btnRegister.UseVisualStyleBackColor = false;
@@ -127,10 +127,10 @@
             // 
             // comboBox1
             // 
-            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
+            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.Name = "comboBox1";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -155,6 +155,7 @@
             Controls.Add(label5);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Register";
+            Load += Register_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
