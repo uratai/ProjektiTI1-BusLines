@@ -40,134 +40,101 @@
             label5 = new Label();
             lblCloseL = new Label();
             lblRegister = new Label();
+            comboBox1 = new ComboBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(93, 245);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(65, 25);
-            label1.TabIndex = 34;
-            label1.Text = "Role:";
             // 
             // cbRole
             // 
             cbRole.FormattingEnabled = true;
-            cbRole.Items.AddRange(new object[] { "User", "Admin" });
-            cbRole.Location = new Point(93, 292);
-            cbRole.Margin = new Padding(3, 2, 3, 2);
+            cbRole.Items.AddRange(new object[] { resources.GetString("cbRole.Items"), resources.GetString("cbRole.Items1") });
+            resources.ApplyResources(cbRole, "cbRole");
             cbRole.Name = "cbRole";
-            cbRole.Size = new Size(366, 33);
-            cbRole.TabIndex = 33;
             // 
             // btnLogin
             // 
             btnLogin.BackColor = Color.Teal;
-            btnLogin.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            resources.ApplyResources(btnLogin, "btnLogin");
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(170, 560);
-            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(214, 77);
-            btnLogin.TabIndex = 32;
-            btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
             // 
-            txtPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(93, 491);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            resources.ApplyResources(txtPassword, "txtPassword");
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(366, 32);
-            txtPassword.TabIndex = 30;
             // 
             // txtUserName
             // 
-            txtUserName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUserName.Location = new Point(93, 397);
-            txtUserName.Margin = new Padding(3, 2, 3, 2);
+            resources.ApplyResources(txtUserName, "txtUserName");
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(366, 32);
-            txtUserName.TabIndex = 29;
             // 
             // lblPassword
             // 
-            lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPassword.Location = new Point(93, 455);
+            resources.ApplyResources(lblPassword, "lblPassword");
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(105, 25);
-            lblPassword.TabIndex = 28;
-            lblPassword.Text = "Password";
             // 
             // lblUsername
             // 
-            lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsername.Location = new Point(93, 345);
+            resources.ApplyResources(lblUsername, "lblUsername");
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(123, 25);
-            lblUsername.TabIndex = 27;
-            lblUsername.Text = "Username:";
+            lblUsername.Click += lblUsername_Click;
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(170, 54);
-            pictureBox6.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(pictureBox6, "pictureBox6");
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(232, 166);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 26;
             pictureBox6.TabStop = false;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            resources.ApplyResources(label5, "label5");
             label5.ForeColor = Color.Crimson;
-            label5.Location = new Point(1162, 739);
-            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(62, 23);
-            label5.TabIndex = 25;
-            label5.Text = "Reset";
             // 
             // lblCloseL
             // 
-            lblCloseL.AutoSize = true;
-            lblCloseL.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            resources.ApplyResources(lblCloseL, "lblCloseL");
             lblCloseL.ForeColor = Color.Crimson;
-            lblCloseL.Location = new Point(516, -1);
-            lblCloseL.Margin = new Padding(4, 0, 4, 0);
             lblCloseL.Name = "lblCloseL";
-            lblCloseL.Size = new Size(36, 36);
-            lblCloseL.TabIndex = 24;
-            lblCloseL.Text = "X";
             lblCloseL.Click += lblCloseL_Click;
             // 
             // lblRegister
             // 
-            lblRegister.AutoSize = true;
-            lblRegister.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRegister.Location = new Point(218, 651);
+            resources.ApplyResources(lblRegister, "lblRegister");
             lblRegister.Name = "lblRegister";
-            lblRegister.Size = new Size(113, 25);
-            lblRegister.TabIndex = 35;
-            lblRegister.Text = "Register...";
             lblRegister.Click += lblRegister_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
+            resources.ApplyResources(comboBox1, "comboBox1");
+            comboBox1.Name = "comboBox1";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // LogIn
             // 
-            AutoScaleDimensions = new SizeF(13F, 25F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(560, 716);
+            Controls.Add(pictureBox1);
+            Controls.Add(comboBox1);
             Controls.Add(lblRegister);
             Controls.Add(label1);
             Controls.Add(cbRole);
@@ -179,14 +146,10 @@
             Controls.Add(pictureBox6);
             Controls.Add(label5);
             Controls.Add(lblCloseL);
-            Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(6, 5, 6, 5);
             Name = "LogIn";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "LogIn";
-          
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -204,5 +167,7 @@
         private Label label5;
         private Label lblCloseL;
         private Label lblRegister;
+        private ComboBox comboBox1;
+        private PictureBox pictureBox1;
     }
 }

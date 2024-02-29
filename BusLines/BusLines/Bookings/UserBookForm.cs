@@ -48,7 +48,7 @@ namespace BusLines.Bookings
                 BookingDAL.InsertBooking(UserId, LineId, dateTimeBooking.Value, cbStatus.Text);
 
                 adminBookForm.UpdateDataGridView();
-               
+
 
             }
 

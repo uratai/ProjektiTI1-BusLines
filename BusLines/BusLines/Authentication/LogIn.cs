@@ -93,6 +93,31 @@ namespace BusLines.Authentication
             }
         }
 
-      
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq-XK");
+                    break;
+                case 2:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
+
+
+        }
+
     }
 }
