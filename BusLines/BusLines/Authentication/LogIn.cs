@@ -93,10 +93,7 @@ namespace BusLines.Authentication
             }
         }
 
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -119,5 +116,12 @@ namespace BusLines.Authentication
 
         }
 
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            txtUserName.PlaceholderText = "Enter your username";
+            txtPassword.PlaceholderText = "Enter your password";
+            
+            
+        }
     }
 }

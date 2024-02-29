@@ -86,7 +86,7 @@
             // 
             resources.ApplyResources(lblUsername, "lblUsername");
             lblUsername.Name = "lblUsername";
-            lblUsername.Click += lblUsername_Click;
+            
             // 
             // pictureBox6
             // 
@@ -148,6 +148,7 @@
             Controls.Add(lblCloseL);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LogIn";
+            Load += LogIn_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
