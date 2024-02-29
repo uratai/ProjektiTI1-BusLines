@@ -29,9 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminBookForm));
-            dataBookUsers = new DataGridView();
+            label1 = new Label();
             btnDelete = new Button();
+            dataBookUsers = new DataGridView();
             panel1 = new Panel();
+            panel3 = new Panel();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            lblFeedbackCom = new Label();
+            pictureBox10 = new PictureBox();
+            lblLinesCom = new Label();
+            lblBookingCom = new Label();
+            pictureBox11 = new PictureBox();
+            panel4 = new Panel();
+            lblLOgoutCom = new Label();
+            pictureBox12 = new PictureBox();
+            lblCompanyCom = new Label();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -44,24 +58,19 @@
             label4 = new Label();
             pictureBox1 = new PictureBox();
             label5 = new Label();
-            label1 = new Label();
             panel5 = new Panel();
-            label16 = new Label();
-            lblCompanyBook = new Label();
-            panel4 = new Panel();
-            pictureBox12 = new PictureBox();
-            lblLogOutBook = new Label();
-            pictureBox11 = new PictureBox();
-            lblBookingBook = new Label();
-            lblLinesBook = new Label();
-            pictureBox10 = new PictureBox();
-            lblFeedbackBook = new Label();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            panel3 = new Panel();
+            label18 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataBookUsers).BeginInit();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -70,41 +79,42 @@
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
-            // dataBookUsers
+            // label1
             // 
-            dataBookUsers.BackgroundColor = Color.Lavender;
-            dataBookUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataBookUsers.Location = new Point(456, 173);
-            dataBookUsers.Margin = new Padding(4);
-            dataBookUsers.Name = "dataBookUsers";
-            dataBookUsers.RowHeadersWidth = 51;
-            dataBookUsers.RowTemplate.Height = 29;
-            dataBookUsers.Size = new Size(1078, 462);
-            dataBookUsers.TabIndex = 0;
+            label1.AccessibleName = "txtSourceLocation";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(1064, 419);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 32);
+            label1.TabIndex = 54;
             // 
             // btnDelete
             // 
             btnDelete.BackColor = Color.Teal;
             btnDelete.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(1363, 670);
+            btnDelete.Location = new Point(1400, 679);
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(171, 84);
-            btnDelete.TabIndex = 40;
+            btnDelete.TabIndex = 53;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
+            // 
+            // dataBookUsers
+            // 
+            dataBookUsers.BackgroundColor = Color.Lavender;
+            dataBookUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataBookUsers.Location = new Point(481, 202);
+            dataBookUsers.Margin = new Padding(4);
+            dataBookUsers.Name = "dataBookUsers";
+            dataBookUsers.RowHeadersWidth = 51;
+            dataBookUsers.RowTemplate.Height = 29;
+            dataBookUsers.Size = new Size(1090, 462);
+            dataBookUsers.TabIndex = 52;
             // 
             // panel1
             // 
@@ -124,8 +134,168 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(30, 792);
-            panel1.TabIndex = 49;
+            panel1.Size = new Size(303, 792);
+            panel1.TabIndex = 67;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Teal;
+            panel3.Controls.Add(pictureBox7);
+            panel3.Controls.Add(pictureBox8);
+            panel3.Controls.Add(pictureBox9);
+            panel3.Controls.Add(lblFeedbackCom);
+            panel3.Controls.Add(pictureBox10);
+            panel3.Controls.Add(lblLinesCom);
+            panel3.Controls.Add(lblBookingCom);
+            panel3.Controls.Add(pictureBox11);
+            panel3.Controls.Add(panel4);
+            panel3.Controls.Add(lblCompanyCom);
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(303, 792);
+            panel3.TabIndex = 15;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(31, 31);
+            pictureBox7.Margin = new Padding(0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(228, 180);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 14;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(17, 588);
+            pictureBox8.Margin = new Padding(0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(76, 76);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 9;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(17, 290);
+            pictureBox9.Margin = new Padding(0);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(76, 76);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 13;
+            pictureBox9.TabStop = false;
+            // 
+            // lblFeedbackCom
+            // 
+            lblFeedbackCom.AutoSize = true;
+            lblFeedbackCom.BackColor = Color.DarkCyan;
+            lblFeedbackCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFeedbackCom.ForeColor = Color.White;
+            lblFeedbackCom.Location = new Point(92, 603);
+            lblFeedbackCom.Margin = new Padding(0);
+            lblFeedbackCom.Name = "lblFeedbackCom";
+            lblFeedbackCom.Size = new Size(135, 32);
+            lblFeedbackCom.TabIndex = 8;
+            lblFeedbackCom.Text = "Feedback";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(17, 488);
+            pictureBox10.Margin = new Padding(0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(76, 76);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 11;
+            pictureBox10.TabStop = false;
+            // 
+            // lblLinesCom
+            // 
+            lblLinesCom.AutoSize = true;
+            lblLinesCom.BackColor = Color.DarkCyan;
+            lblLinesCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLinesCom.ForeColor = Color.White;
+            lblLinesCom.Location = new Point(93, 305);
+            lblLinesCom.Margin = new Padding(0);
+            lblLinesCom.Name = "lblLinesCom";
+            lblLinesCom.Size = new Size(80, 32);
+            lblLinesCom.TabIndex = 12;
+            lblLinesCom.Text = "Lines";
+            // 
+            // lblBookingCom
+            // 
+            lblBookingCom.AutoSize = true;
+            lblBookingCom.BackColor = Color.DarkCyan;
+            lblBookingCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBookingCom.ForeColor = Color.White;
+            lblBookingCom.Location = new Point(92, 503);
+            lblBookingCom.Margin = new Padding(0);
+            lblBookingCom.Name = "lblBookingCom";
+            lblBookingCom.Size = new Size(132, 32);
+            lblBookingCom.TabIndex = 10;
+            lblBookingCom.Text = "Bookings";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(17, 390);
+            pictureBox11.Margin = new Padding(0);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(76, 76);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 9;
+            pictureBox11.TabStop = false;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.MediumTurquoise;
+            panel4.Controls.Add(lblLOgoutCom);
+            panel4.Controls.Add(pictureBox12);
+            panel4.Location = new Point(3, 723);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(300, 75);
+            panel4.TabIndex = 2;
+            // 
+            // lblLOgoutCom
+            // 
+            lblLOgoutCom.AutoSize = true;
+            lblLOgoutCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLOgoutCom.ForeColor = Color.White;
+            lblLOgoutCom.Location = new Point(104, 21);
+            lblLOgoutCom.Margin = new Padding(0);
+            lblLOgoutCom.Name = "lblLOgoutCom";
+            lblLOgoutCom.Size = new Size(102, 32);
+            lblLOgoutCom.TabIndex = 15;
+            lblLOgoutCom.Text = "Logout";
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(28, 1);
+            pictureBox12.Margin = new Padding(0);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(76, 76);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox12.TabIndex = 7;
+            pictureBox12.TabStop = false;
+            // 
+            // lblCompanyCom
+            // 
+            lblCompanyCom.AutoSize = true;
+            lblCompanyCom.BackColor = Color.DarkCyan;
+            lblCompanyCom.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyCom.ForeColor = Color.White;
+            lblCompanyCom.Location = new Point(92, 405);
+            lblCompanyCom.Margin = new Padding(0);
+            lblCompanyCom.Name = "lblCompanyCom";
+            lblCompanyCom.Size = new Size(136, 32);
+            lblCompanyCom.TabIndex = 8;
+            lblCompanyCom.Text = "Company";
             // 
             // pictureBox6
             // 
@@ -267,201 +437,37 @@
             label5.TabIndex = 8;
             label5.Text = "Bus";
             // 
-            // label1
-            // 
-            label1.AccessibleName = "txtSourceLocation";
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(964, 450);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 32);
-            label1.TabIndex = 48;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.MediumTurquoise;
-            panel5.Controls.Add(label16);
+            panel5.Controls.Add(label18);
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(30, 0);
+            panel5.Location = new Point(303, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1723, 66);
-            panel5.TabIndex = 50;
+            panel5.Size = new Size(1450, 66);
+            panel5.TabIndex = 68;
             // 
-            // label16
+            // label18
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(601, 20);
-            label16.Name = "label16";
-            label16.Size = new Size(184, 33);
-            label16.TabIndex = 72;
-            label16.Text = "Users Booking";
+            label18.AutoSize = true;
+            label18.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(555, 20);
+            label18.Name = "label18";
+            label18.Size = new Size(210, 33);
+            label18.TabIndex = 72;
+            label18.Text = "Admin Company";
             // 
-            // lblCompanyBook
+            // label2
             // 
-            lblCompanyBook.AutoSize = true;
-            lblCompanyBook.BackColor = Color.DarkCyan;
-            lblCompanyBook.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCompanyBook.ForeColor = Color.White;
-            lblCompanyBook.Location = new Point(92, 405);
-            lblCompanyBook.Margin = new Padding(0);
-            lblCompanyBook.Name = "lblCompanyBook";
-            lblCompanyBook.Size = new Size(136, 32);
-            lblCompanyBook.TabIndex = 8;
-            lblCompanyBook.Text = "Company";
-            lblCompanyBook.Click += lblCompanyBook_Click;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.MediumTurquoise;
-            panel4.Controls.Add(lblLogOutBook);
-            panel4.Controls.Add(pictureBox12);
-            panel4.Location = new Point(3, 723);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(300, 75);
-            panel4.TabIndex = 2;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(28, 1);
-            pictureBox12.Margin = new Padding(0);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(76, 76);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 7;
-            pictureBox12.TabStop = false;
-            // 
-            // lblLogOutBook
-            // 
-            lblLogOutBook.AutoSize = true;
-            lblLogOutBook.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLogOutBook.ForeColor = Color.White;
-            lblLogOutBook.Location = new Point(104, 21);
-            lblLogOutBook.Margin = new Padding(0);
-            lblLogOutBook.Name = "lblLogOutBook";
-            lblLogOutBook.Size = new Size(102, 32);
-            lblLogOutBook.TabIndex = 15;
-            lblLogOutBook.Text = "Logout";
-            lblLogOutBook.Click += lblLogOutBook_Click;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(17, 390);
-            pictureBox11.Margin = new Padding(0);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(76, 76);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 9;
-            pictureBox11.TabStop = false;
-            // 
-            // lblBookingBook
-            // 
-            lblBookingBook.AutoSize = true;
-            lblBookingBook.BackColor = Color.DarkCyan;
-            lblBookingBook.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBookingBook.ForeColor = Color.White;
-            lblBookingBook.Location = new Point(92, 503);
-            lblBookingBook.Margin = new Padding(0);
-            lblBookingBook.Name = "lblBookingBook";
-            lblBookingBook.Size = new Size(132, 32);
-            lblBookingBook.TabIndex = 10;
-            lblBookingBook.Text = "Bookings";
-            // 
-            // lblLinesBook
-            // 
-            lblLinesBook.AutoSize = true;
-            lblLinesBook.BackColor = Color.DarkCyan;
-            lblLinesBook.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLinesBook.ForeColor = Color.White;
-            lblLinesBook.Location = new Point(93, 305);
-            lblLinesBook.Margin = new Padding(0);
-            lblLinesBook.Name = "lblLinesBook";
-            lblLinesBook.Size = new Size(80, 32);
-            lblLinesBook.TabIndex = 12;
-            lblLinesBook.Text = "Lines";
-            lblLinesBook.Click += lblLinesBook_Click;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(17, 488);
-            pictureBox10.Margin = new Padding(0);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(76, 76);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 11;
-            pictureBox10.TabStop = false;
-            // 
-            // lblFeedbackBook
-            // 
-            lblFeedbackBook.AutoSize = true;
-            lblFeedbackBook.BackColor = Color.DarkCyan;
-            lblFeedbackBook.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFeedbackBook.ForeColor = Color.White;
-            lblFeedbackBook.Location = new Point(92, 603);
-            lblFeedbackBook.Margin = new Padding(0);
-            lblFeedbackBook.Name = "lblFeedbackBook";
-            lblFeedbackBook.Size = new Size(135, 32);
-            lblFeedbackBook.TabIndex = 8;
-            lblFeedbackBook.Text = "Feedback";
-            lblFeedbackBook.Click += lblFeedbackBook_Click;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(17, 290);
-            pictureBox9.Margin = new Padding(0);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(76, 76);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 13;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(17, 588);
-            pictureBox8.Margin = new Padding(0);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(76, 76);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 9;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(31, 31);
-            pictureBox7.Margin = new Padding(0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(228, 180);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 14;
-            pictureBox7.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Teal;
-            panel3.Controls.Add(pictureBox7);
-            panel3.Controls.Add(pictureBox8);
-            panel3.Controls.Add(pictureBox9);
-            panel3.Controls.Add(lblFeedbackBook);
-            panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(lblLinesBook);
-            panel3.Controls.Add(lblBookingBook);
-            panel3.Controls.Add(pictureBox11);
-            panel3.Controls.Add(panel4);
-            panel3.Controls.Add(lblCompanyBook);
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(268, 792);
-            panel3.TabIndex = 15;
+            label2.AutoSize = true;
+            label2.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(481, 134);
+            label2.Name = "label2";
+            label2.Size = new Size(245, 32);
+            label2.TabIndex = 69;
+            label2.Text = "List of Companies";
             // 
             // AdminBookForm
             // 
@@ -469,6 +475,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1753, 792);
+            Controls.Add(label2);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Controls.Add(label1);
@@ -481,6 +488,16 @@
             ((System.ComponentModel.ISupportInitialize)dataBookUsers).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -491,32 +508,33 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataBookUsers;
-        private Button btnDelete;
         private Button btnUpdate;
         private Button btnAdd;
         private DateTimePicker dateTimeBooking;
         private ComboBox cbStatus;
-        private Label label4;
         private TextBox txtLine;
         private Label label1;
+        private Button btnDelete;
+        private DataGridView dataBookUsers;
         private Panel panel1;
+        private Panel panel3;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
+        private Label lblFeedbackCom;
+        private PictureBox pictureBox10;
+        private Label lblLinesCom;
+        private Label lblBookingCom;
+        private PictureBox pictureBox11;
+        private Panel panel4;
+        private Label lblLOgoutCom;
+        private PictureBox pictureBox12;
+        private Label lblCompanyCom;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
@@ -526,22 +544,11 @@
         private Label label6;
         private PictureBox pictureBox2;
         private Panel panel2;
+        private Label label4;
         private PictureBox pictureBox1;
         private Label label5;
         private Panel panel5;
-        private Label label16;
-        private Panel panel3;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private Label lblFeedbackBook;
-        private PictureBox pictureBox10;
-        private Label lblLinesBook;
-        private Label lblBookingBook;
-        private PictureBox pictureBox11;
-        private Panel panel4;
-        private Label lblLogOutBook;
-        private PictureBox pictureBox12;
-        private Label lblCompanyBook;
+        private Label label18;
+        private Label label2;
     }
 }
