@@ -59,6 +59,7 @@
             label5 = new Label();
             label1 = new Label();
             panel5 = new Panel();
+            label16 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataBookUsers).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // dataBookUsers
@@ -438,12 +440,24 @@
             // panel5
             // 
             panel5.BackColor = Color.MediumTurquoise;
+            panel5.Controls.Add(label16);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(303, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(1450, 66);
             panel5.TabIndex = 50;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(601, 20);
+            label16.Name = "label16";
+            label16.Size = new Size(184, 33);
+            label16.TabIndex = 72;
+            label16.Text = "Users Booking";
             // 
             // AdminBookForm
             // 
@@ -482,6 +496,8 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -523,5 +539,6 @@
         private PictureBox pictureBox1;
         private Label label5;
         private Panel panel5;
+        private Label label16;
     }
 }

@@ -50,6 +50,7 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             panel3 = new Panel();
+            label16 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // cbStatus
@@ -110,7 +112,7 @@
             btnBook.BackColor = Color.Teal;
             btnBook.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnBook.ForeColor = Color.White;
-            btnBook.Location = new Point(652, 488);
+            btnBook.Location = new Point(617, 488);
             btnBook.Margin = new Padding(6);
             btnBook.Name = "btnBook";
             btnBook.Size = new Size(171, 84);
@@ -290,12 +292,24 @@
             // panel3
             // 
             panel3.BackColor = Color.MediumTurquoise;
+            panel3.Controls.Add(label16);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(303, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
             panel3.Size = new Size(1621, 66);
             panel3.TabIndex = 44;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(624, 20);
+            label16.Name = "label16";
+            label16.Size = new Size(201, 33);
+            label16.TabIndex = 72;
+            label16.Text = "Booking Details";
             // 
             // UserBookForm
             // 
@@ -328,6 +342,8 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -355,5 +371,6 @@
         private PictureBox pictureBox1;
         private Label label5;
         private Panel panel3;
+        private Label label16;
     }
 }

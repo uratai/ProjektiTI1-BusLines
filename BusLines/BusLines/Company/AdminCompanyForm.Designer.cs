@@ -71,6 +71,7 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             panel5 = new Panel();
+            label18 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataAddCompany).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -88,6 +89,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -104,30 +106,30 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(755, 114);
+            label13.Location = new Point(735, 127);
             label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(179, 32);
+            label13.Size = new Size(245, 32);
             label13.TabIndex = 65;
-            label13.Text = "List of Buses";
+            label13.Text = "List of Companies";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Verdana", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(374, 114);
+            label12.Location = new Point(370, 127);
             label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
-            label12.Size = new Size(160, 32);
+            label12.Size = new Size(234, 32);
             label12.TabIndex = 64;
-            label12.Text = "Bus Details";
+            label12.Text = "Company Details";
             // 
             // btnDelete
             // 
             btnDelete.BackColor = Color.Teal;
             btnDelete.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(435, 723);
+            btnDelete.Location = new Point(434, 714);
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(115, 62);
@@ -579,12 +581,24 @@
             // panel5
             // 
             panel5.BackColor = Color.MediumTurquoise;
+            panel5.Controls.Add(label18);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(303, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(1428, 66);
             panel5.TabIndex = 67;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Trebuchet MS", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(555, 20);
+            label18.Name = "label18";
+            label18.Size = new Size(210, 33);
+            label18.TabIndex = 72;
+            label18.Text = "Admin Company";
             // 
             // AdminCompanyForm
             // 
@@ -610,10 +624,9 @@
             Controls.Add(txtCompanyNumber);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "AdminCompanyForm";
             Text = "AdminCompanyForm";
-            Load += AdminCompanyForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataAddCompany).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -635,6 +648,8 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -682,5 +697,6 @@
         private PictureBox pictureBox1;
         private Label label5;
         private Panel panel5;
+        private Label label18;
     }
 }
