@@ -158,7 +158,7 @@
             Controls.Add(lblCloseL);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LogIn";
-            Load += LogIn_Load;
+          
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

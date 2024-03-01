@@ -34,6 +34,7 @@ namespace BusLines.Feedback
         private void lblLinesUser_Click(object sender, EventArgs e)
         {
             AdminFormLines adminFormLines = new AdminFormLines();
+            adminFormLines.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminFormLines.Show();
             this.Hide();
         }
@@ -41,6 +42,7 @@ namespace BusLines.Feedback
         private void lblCompanyUser_Click(object sender, EventArgs e)
         {
             AdminCompanyForm adminCompanyForm = new AdminCompanyForm();
+            adminCompanyForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminCompanyForm.Show();
             this.Hide();
         }
@@ -48,6 +50,7 @@ namespace BusLines.Feedback
         private void lblBookingUser_Click(object sender, EventArgs e)
         {
             AdminBookForm adminBookForm = new AdminBookForm();
+            adminBookForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminBookForm.Show();
             this.Hide();
         }
@@ -87,6 +90,19 @@ namespace BusLines.Feedback
             {
                 MessageBox.Show("Please select a feedback to delete.");
             }
+        }
+
+        private void FeedbackAdminForm_Load_1(object sender, EventArgs e)
+        {
+            FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
+
+            // Get the screen coordinates of the current form
+            Point screenCoords = this.PointToScreen(new Point(this.Location.X + 20, this.Location.Y + 50));
+
+            feedbackAdminForm.StartPosition = FormStartPosition.Manual;
+            feedbackAdminForm.Location = screenCoords;
+            //feedbackAdminForm.Show();
+            this.Hide();
         }
     }
 }

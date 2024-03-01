@@ -66,6 +66,7 @@ namespace BusLines.Bookings
         private void lblLinesCom_Click(object sender, EventArgs e)
         {
             AdminFormLines adminFormLines = new AdminFormLines();
+            adminFormLines.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminFormLines.Show();
             this.Hide();
         }
@@ -73,6 +74,7 @@ namespace BusLines.Bookings
         private void lblCompanyCom_Click(object sender, EventArgs e)
         {
             AdminCompanyForm adminCompanyForm = new AdminCompanyForm();
+            adminCompanyForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminCompanyForm.Show();
             this.Hide();
         }
@@ -80,6 +82,7 @@ namespace BusLines.Bookings
         private void lblFeedbackCom_Click(object sender, EventArgs e)
         {
             FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
+            feedbackAdminForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             feedbackAdminForm.Show();
             this.Hide();
         }
@@ -89,6 +92,17 @@ namespace BusLines.Bookings
             LogIn logIn = new LogIn();
             logIn.Show();
             this.Hide();
+        }
+
+        private void AdminBookForm_Load(object sender, EventArgs e)
+        {
+            AdminBookForm adminformbook = new AdminBookForm();
+
+            // Get the screen coordinates of the current form
+            Point screenCoords = this.PointToScreen(new Point(this.Location.X + 20, this.Location.Y + 50));
+
+            adminformbook.StartPosition = FormStartPosition.Manual;
+            adminformbook.Location = screenCoords;
         }
     }
 }

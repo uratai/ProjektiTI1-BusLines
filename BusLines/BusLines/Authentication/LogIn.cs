@@ -42,52 +42,60 @@ namespace BusLines.Authentication
             string enteredPassword = txtPassword.Text;
             string selectedRole = cbRole.SelectedItem?.ToString(); // Assuming you have a ComboBox control named cbRole for role selection
 
-            // Create a SQL query to retrieve the user ID of the logged-in user
-            string userIdQuery = "SELECT UserID FROM [Users] WHERE Username = @Username AND Password = @Password AND Role = @Role";
-
-            using (SqlConnection con = new SqlConnection(DBHelper.GetConnectionString()))
+            if (string.IsNullOrEmpty(enteredUsername) || string.IsNullOrEmpty(enteredPassword) || string.IsNullOrEmpty(selectedRole))
             {
-                using (SqlCommand command = new SqlCommand(userIdQuery, con))
+                MessageBox.Show("Please fill in all the fields before logging in.");
+            }
+            else
+            {
+                // Create a SQL query to retrieve the user ID of the logged-in user
+                string userIdQuery = "SELECT UserID FROM [Users] WHERE Username = @Username AND Password = @Password AND Role = @Role";
+
+
+                using (SqlConnection con = new SqlConnection(DBHelper.GetConnectionString()))
                 {
-                    command.Parameters.AddWithValue("@Username", enteredUsername);
-                    command.Parameters.AddWithValue("@Password", enteredPassword);
-                    command.Parameters.AddWithValue("@Role", selectedRole);
-
-                    try
+                    using (SqlCommand command = new SqlCommand(userIdQuery, con))
                     {
-                        con.Open();
-                        object userIdObj = command.ExecuteScalar();
+                        command.Parameters.AddWithValue("@Username", enteredUsername);
+                        command.Parameters.AddWithValue("@Password", enteredPassword);
+                        command.Parameters.AddWithValue("@Role", selectedRole);
 
-                        if (userIdObj != null)
+                        try
                         {
-                            int userId = (int)userIdObj;
+                            con.Open();
+                            object userIdObj = command.ExecuteScalar();
 
-                            MessageBox.Show("Login successful!");
-
-                            // Open the appropriate form based on the selected role
-                            if (selectedRole.Equals("User", StringComparison.OrdinalIgnoreCase))
+                            if (userIdObj != null)
                             {
-                                // Open UserForm and pass user ID
-                                BookingForm userForm = new BookingForm(userId);
-                                FeedbackUserForm feedbackform = new FeedbackUserForm(userId);
-                                //feedbackform.Show();
-                                userForm.Show();
+                                int userId = (int)userIdObj;
+
+                                MessageBox.Show("Login successful!");
+
+                                // Open the appropriate form based on the selected role
+                                if (selectedRole.Equals("User", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    // Open UserForm and pass user ID
+                                    UserIntroForm userForm = new UserIntroForm();
+                            
+                                    //feedbackform.Show();
+                                    userForm.Show();
+                                }
+                                else if (selectedRole.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    // Open AdminForm and pass user ID
+                                    AdminIntroForm adminForm = new AdminIntroForm();
+                                    adminForm.Show();
+                                }
                             }
-                            else if (selectedRole.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                            else
                             {
-                                // Open AdminForm and pass user ID
-                                AdminFormLines adminForm = new AdminFormLines();
-                                adminForm.Show();
+                                MessageBox.Show("Invalid username, password, or role. Please try again.");
                             }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            MessageBox.Show("Invalid username, password, or role. Please try again.");
+                            MessageBox.Show("An error occurred: " + ex.Message);
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("An error occurred: " + ex.Message);
                     }
                 }
             }

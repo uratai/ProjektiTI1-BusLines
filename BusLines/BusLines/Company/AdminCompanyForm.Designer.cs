@@ -637,6 +637,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminCompanyForm";
             Text = "AdminCompanyForm";
+            Load += AdminCompanyForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataAddCompany).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

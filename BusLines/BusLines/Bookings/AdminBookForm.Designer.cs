@@ -493,6 +493,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminBookForm";
             Text = "AdminBookForm";
+            Load += AdminBookForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataBookUsers).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

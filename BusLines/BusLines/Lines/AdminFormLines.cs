@@ -76,7 +76,15 @@ namespace BusLines.Lines
             {
                 MessageBox.Show("Error loading companies: " + ex.Message);
             }
+            AdminFormLines adminformlines = new AdminFormLines();
 
+            // Get the screen coordinates of the current form
+            Point screenCoords = this.PointToScreen(new Point(this.Location.X + 20, this.Location.Y + 50));
+
+            adminformlines.StartPosition = FormStartPosition.Manual;
+            adminformlines.Location = screenCoords;
+       //     adminformlines.Show();
+            this.Hide();
 
         }
 
@@ -85,6 +93,7 @@ namespace BusLines.Lines
         private void lblCompany_Click(object sender, EventArgs e)
         {
             AdminCompanyForm adminCompanyForm = new AdminCompanyForm();
+            adminCompanyForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminCompanyForm.Show();
             this.Hide();
 
@@ -94,6 +103,7 @@ namespace BusLines.Lines
         private void lblBookings_Click(object sender, EventArgs e)
         {
             AdminBookForm adminBookForm = new AdminBookForm();
+            adminBookForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminBookForm.Show();
             this.Hide();
         }
@@ -101,6 +111,7 @@ namespace BusLines.Lines
         private void lblFeedback_Click(object sender, EventArgs e)
         {
             FeedbackAdminForm feedbackAdminForm = new FeedbackAdminForm();
+            feedbackAdminForm.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             feedbackAdminForm.Show();
             this.Hide();
         }
@@ -201,6 +212,7 @@ namespace BusLines.Lines
         private void lblLines_Click(object sender, EventArgs e)
         {
             AdminFormLines adminFormLines = new AdminFormLines();
+            adminFormLines.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
             adminFormLines.Show();
             this.Hide();
 

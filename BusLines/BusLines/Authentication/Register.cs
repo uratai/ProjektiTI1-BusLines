@@ -17,6 +17,7 @@ namespace BusLines.Authentication
         public Register()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
         }
 
         private void lblBackLogIn_Click(object sender, EventArgs e)
@@ -38,29 +39,37 @@ namespace BusLines.Authentication
             string enteredEmail = txtEmail.Text;
             string enteredUsername = txtUserName.Text;
             string enteredPassword = txtPassword.Text;
-            string selectedRole = cmbRole.SelectedItem.ToString();
+            string selectedRole = cmbRole.SelectedItem?.ToString(); // Ensure selectedRole is not null
 
-            // Create a SQL query to call the stored procedure for creating a user
-            string query = "EXEC [dbo].[InsertUser] @Username = @Username, @Password = @Password, @Role = @Role, @Email = @Email";
-
-            using (SqlConnection con = new SqlConnection(DBHelper.GetConnectionString()))
+            // Check if any of the text boxes is empty
+            if (string.IsNullOrEmpty(enteredEmail) || string.IsNullOrEmpty(enteredUsername) || string.IsNullOrEmpty(enteredPassword) || string.IsNullOrEmpty(selectedRole))
             {
-                using (SqlCommand command = new SqlCommand(query, con))
+                MessageBox.Show("Please fill in all the fields before registering.");
+            }
+            else
+            {
+                // Create a SQL query to call the stored procedure for creating a user
+                string query = "EXEC [dbo].[InsertUser] @Username = @Username, @Password = @Password, @Role = @Role, @Email = @Email";
+
+                using (SqlConnection con = new SqlConnection(DBHelper.GetConnectionString()))
                 {
-                    command.Parameters.AddWithValue("@Email", enteredEmail);
-                    command.Parameters.AddWithValue("@Role", selectedRole); // Assuming roles are correctly populated in cmbRole
-                    command.Parameters.AddWithValue("@Username", enteredUsername);
-                    command.Parameters.AddWithValue("@Password", enteredPassword);
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@Email", enteredEmail);
+                        command.Parameters.AddWithValue("@Role", selectedRole); // Assuming roles are correctly populated in cmbRole
+                        command.Parameters.AddWithValue("@Username", enteredUsername);
+                        command.Parameters.AddWithValue("@Password", enteredPassword);
 
-                    con.Open();
-                    command.ExecuteNonQuery();
+                        con.Open();
+                        command.ExecuteNonQuery();
 
-                    MessageBox.Show("Registration successful! You can now log in.");
+                        MessageBox.Show("Registration successful! You can now log in.");
 
-                    // Reset the input fields after successful registration
-                    txtEmail.Text = "";
-                    txtUserName.Text = "";
-                    txtPassword.Text = "";
+                        // Reset the input fields after successful registration
+                        txtEmail.Text = "";
+                        txtUserName.Text = "";
+                        txtPassword.Text = "";
+                    }
                 }
             }
         }

@@ -129,7 +129,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(303, 788);
+            panel3.Size = new Size(242, 788);
             panel3.TabIndex = 15;
             // 
             // pictureBox7
@@ -480,6 +480,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FeedbackAdminForm";
             Text = "FeedbackAdminForm";
+            Load += FeedbackAdminForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataFeedbackUser).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
