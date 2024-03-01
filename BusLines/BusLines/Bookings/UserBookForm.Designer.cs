@@ -59,7 +59,7 @@
             // cbStatus
             // 
             cbStatus.FormattingEnabled = true;
-            cbStatus.Items.AddRange(new object[] { "Book", "Cancel" });
+            cbStatus.Items.AddRange(new object[] { "Book" });
             cbStatus.Location = new Point(671, 358);
             cbStatus.Margin = new Padding(3, 2, 3, 2);
             cbStatus.Name = "cbStatus";
@@ -198,7 +198,6 @@
             label7.Size = new Size(157, 26);
             label7.TabIndex = 12;
             label7.Text = "Search & Book";
-          
             // 
             // panel2
             // 
