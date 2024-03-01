@@ -92,10 +92,7 @@ namespace BusLines.Authentication
             InitializeComponent();
         }
 
-        private void Register_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
 

@@ -56,10 +56,10 @@
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
             label2 = new Label();
+            label3 = new Label();
             panel4 = new Panel();
             label10 = new Label();
             pictureBox12 = new PictureBox();
-            label3 = new Label();
             panel1 = new Panel();
             label1 = new Label();
             panel5.SuspendLayout();
@@ -83,11 +83,11 @@
             // 
             // panel5
             // 
-            resources.ApplyResources(panel5, "panel5");
             panel5.BackColor = Color.MediumTurquoise;
             panel5.Controls.Add(pictureBox10);
             panel5.Controls.Add(comboBox1);
             panel5.Controls.Add(label16);
+            resources.ApplyResources(panel5, "panel5");
             panel5.Name = "panel5";
             // 
             // pictureBox10
@@ -98,10 +98,10 @@
             // 
             // comboBox1
             // 
-            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
+            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.Name = "comboBox1";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -113,9 +113,9 @@
             // 
             // dataBookForm
             // 
-            resources.ApplyResources(dataBookForm, "dataBookForm");
             dataBookForm.BackgroundColor = Color.Lavender;
             dataBookForm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(dataBookForm, "dataBookForm");
             dataBookForm.Name = "dataBookForm";
             dataBookForm.RowTemplate.Height = 33;
             dataBookForm.CellContentClick += dataBookForm_CellContentClick_1;
@@ -142,8 +142,8 @@
             // 
             // button4
             // 
-            resources.ApplyResources(button4, "button4");
             button4.BackColor = Color.Teal;
+            resources.ApplyResources(button4, "button4");
             button4.ForeColor = Color.White;
             button4.Name = "button4";
             button4.UseVisualStyleBackColor = false;
@@ -158,10 +158,10 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(panel2, "panel2");
             panel2.BackColor = Color.MediumTurquoise;
             panel2.Controls.Add(label4);
             panel2.Controls.Add(pictureBox1);
+            resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
             // 
             // label4
@@ -229,7 +229,6 @@
             // 
             // panel3
             // 
-            resources.ApplyResources(panel3, "panel3");
             panel3.BackColor = Color.Teal;
             panel3.Controls.Add(pictureBox7);
             panel3.Controls.Add(pictureBox8);
@@ -237,6 +236,7 @@
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(panel4);
+            resources.ApplyResources(panel3, "panel3");
             panel3.Name = "panel3";
             // 
             // pictureBox7
@@ -265,26 +265,6 @@
             label2.Name = "label2";
             label2.Click += label2_Click;
             // 
-            // panel4
-            // 
-            resources.ApplyResources(panel4, "panel4");
-            panel4.BackColor = Color.MediumTurquoise;
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(pictureBox12);
-            panel4.Name = "panel4";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(label10, "label10");
-            label10.ForeColor = Color.White;
-            label10.Name = "label10";
-            // 
-            // pictureBox12
-            // 
-            resources.ApplyResources(pictureBox12, "pictureBox12");
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.TabStop = false;
-            // 
             // label3
             // 
             resources.ApplyResources(label3, "label3");
@@ -292,9 +272,29 @@
             label3.ForeColor = Color.White;
             label3.Name = "label3";
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.MediumTurquoise;
+            panel4.Controls.Add(label10);
+            panel4.Controls.Add(pictureBox12);
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(label10, "label10");
+            label10.ForeColor = Color.White;
+            label10.Name = "label10";
+            label10.Click += label10_Click;
+            // 
+            // pictureBox12
+            // 
+            resources.ApplyResources(pictureBox12, "pictureBox12");
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.TabStop = false;
+            // 
             // panel1
             // 
-            resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = Color.Teal;
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(pictureBox6);
@@ -307,6 +307,7 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label5);
+            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
             // 
             // label1
@@ -330,7 +331,6 @@
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "BookingForm";
-            Load += BookingForm_Load;
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();

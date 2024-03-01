@@ -75,7 +75,7 @@ namespace BusLines.Authentication
                                 if (selectedRole.Equals("User", StringComparison.OrdinalIgnoreCase))
                                 {
                                     // Open UserForm and pass user ID
-                                    UserIntroForm userForm = new UserIntroForm();
+                                    BookingForm userForm = new BookingForm(userId);
                             
                                     //feedbackform.Show();
                                     userForm.Show();
@@ -124,12 +124,6 @@ namespace BusLines.Authentication
 
         }
 
-        //private void LogIn_Load(object sender, EventArgs e)
-        //{
-        //    txtUserName.PlaceholderText = "Enter your username";
-        //    txtPassword.PlaceholderText = "Enter your password";
-
-
-        //}
+     
     }
 }

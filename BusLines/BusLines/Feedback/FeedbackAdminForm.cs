@@ -62,11 +62,7 @@ namespace BusLines.Feedback
             this.Hide();
         }
 
-        private void FeedbackAdminForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dataFeedbackUser.SelectedCells.Count > 0)

@@ -155,7 +155,7 @@
             Controls.Add(label5);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Register";
-            Load += Register_Load;
+           
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using BusLines.DAL;
+﻿using BusLines.Authentication;
+using BusLines.DAL;
 using BusLines.Feedback;
 using System;
 using System.Collections.Generic;
@@ -25,18 +26,13 @@ namespace BusLines.Bookings
             UserId = userId;
         }
 
-        private void BookingForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         private void label2_Click(object sender, EventArgs e)
         {
             FeedbackUserForm feedbackUserForm = new FeedbackUserForm(UserId);
             feedbackUserForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -101,6 +97,13 @@ namespace BusLines.Bookings
             }
             this.Controls.Clear();
             InitializeComponent();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            LogIn log = new LogIn();
+            log.Show();
+            this.Hide();
         }
     }
 }
