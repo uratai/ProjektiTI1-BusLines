@@ -83,7 +83,7 @@ namespace BusLines.Lines
 
             adminformlines.StartPosition = FormStartPosition.Manual;
             adminformlines.Location = screenCoords;
-       //     adminformlines.Show();
+            //     adminformlines.Show();
             this.Hide();
 
         }
@@ -125,7 +125,25 @@ namespace BusLines.Lines
 
         }
 
-        private void btnAdd_Click_1(object sender, EventArgs e)
+        
+
+
+
+        private void lblLines_Click(object sender, EventArgs e)
+        {
+            AdminFormLines adminFormLines = new AdminFormLines();
+            adminFormLines.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
+            adminFormLines.Show();
+            this.Hide();
+
+        }
+
+        private void Mainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             int companyID = Convert.ToInt32(cmbCompanyID.SelectedValue);
 
@@ -147,10 +165,12 @@ namespace BusLines.Lines
                 MessageBox.Show("Error adding line: " + ex.Message);
             }
         }
+    
 
-
-        private void btnUpdate_Click_1(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+
             if (dataAddLines.SelectedCells.Count > 0)
             {
                 int rowIndex = dataAddLines.SelectedCells[0].RowIndex;
@@ -174,9 +194,7 @@ namespace BusLines.Lines
             }
         }
 
-
-
-        private void btnDelete_Click_1(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dataAddLines.SelectedRows.Count > 0)
             {
@@ -208,21 +226,8 @@ namespace BusLines.Lines
                 MessageBox.Show("Please select a line to update.");
             }
         }
-
-        private void lblLines_Click(object sender, EventArgs e)
-        {
-            AdminFormLines adminFormLines = new AdminFormLines();
-            adminFormLines.Location = new Point(this.Location.X + 20, this.Location.Y + 20);
-            adminFormLines.Show();
-            this.Hide();
-
-        }
-
-        private void Mainpanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
-}
+    }
+
 
 

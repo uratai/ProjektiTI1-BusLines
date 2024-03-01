@@ -474,6 +474,7 @@
             btnUpdate.TabIndex = 82;
             btnUpdate.Text = "Delete";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -485,6 +486,7 @@
             btnDelete.TabIndex = 81;
             btnDelete.Text = "Edit";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -496,6 +498,7 @@
             btnAdd.TabIndex = 80;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // label5
             // 
